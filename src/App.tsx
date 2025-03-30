@@ -5,7 +5,7 @@ import Bento2 from "./Components/Bento2";
 function App() {
   return (
     <>
-      <Bento />
+      {/* <Bento /> */}
       <Bento2 />
     </>
   );

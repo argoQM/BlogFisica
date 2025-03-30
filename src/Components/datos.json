@@ -195,7 +195,7 @@
     "Ecuaciones": ""
   },
   "video16": {
-    "resumen": "Choques<ul><li>Se retoma el tema de choques, comenzando con el <strong>choque unidimensional</strong>.</li><li>Se define el <strong>choque elástico</strong> y se plantea la conservación de la energía.</li><li>Se utilizan dos ecuaciones para despejar las velocidades finales ( u<sub>1</sub ) y ( u<sub>2</sub ).</li><li>Se resuelven ecuaciones no lineales debido a la energía cinética.</li><li>Se introduce el <strong>coeficiente de restitución ( e )</strong> para clasificar los choques.( e = 1 ) para choques elásticos y ( e = 0 ) para choques inelásticos.</li><li>Se discuten ejemplos de choques parcialmente inelásticos y explosivos.</li><li>Se menciona la <strong>conservación del momento lineal</strong> y su relación con la energía.</li></ul>",
+    "resumen": "Choques<ul><li>Se retoma el tema de choques, comenzando con el <strong>choque unidimensional</strong>.</li><li>Se define el <strong>choque elástico</strong> y se plantea la conservación de la energía.</li><li>Se utilizan dos ecuaciones para despejar las velocidades finales ( u<sub>1</sub> ) y ( u<sub>2</sub> ).</li><li>Se resuelven ecuaciones no lineales debido a la energía cinética.</li><li>Se introduce el <strong>coeficiente de restitución ( e )</strong> para clasificar los choques.( e = 1 ) para choques elásticos y ( e = 0 ) para choques inelásticos.</li><li>Se discuten ejemplos de choques parcialmente inelásticos y explosivos.</li><li>Se menciona la <strong>conservación del momento lineal</strong> y su relación con la energía.</li></ul>",
     "Video": {
       "url": "https://www.youtube.com/embed/eTAH4xGi_QE",
       "title": "2019 Clase 16 Física 101"
