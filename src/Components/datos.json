@@ -1,366 +1,381 @@
 {
-  "video1": {
-    "resumen": " Introducción al curso de Física 101 <br/><ul><li>Ricardo Faccio es el docente encargado del curso.</li> <li>Clases teóricas se realizarán los lunes y miércoles.</li><li>Las primeras tres semanas serán solo teóricas.</li> <li>Clases de práctico comenzarán en la cuarta semana.</li></ul> <br/>Objetivos del curso <ul><li>La física es fundamental para carreras científico-tecnológicas. </li><li>Se busca entender y modelar fenómenos naturales.</li><li> Se enfatiza la importancia de asistir a clases de consulta.</li></ul><br/> Evaluación y recursos <ul><li>Se implementará una evaluación mixta (múltiple y desarrollo). </li><li>Material de apoyo incluye filmaciones y transparencias.</li><li> Se recomienda leer el capítulo antes de las clases teóricas.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/3KZ8Azbu_5U",
-      "title": "2019 Clase 01 Física 101"
+  "temas": {
+    "Generalidades": {
+      "video1": {
+        "resumen": " Introducción al curso de Física 101 <br/><ul><li>Ricardo Faccio es el docente encargado del curso.</li> <li>Clases teóricas se realizarán los lunes y miércoles.</li><li>Las primeras tres semanas serán solo teóricas.</li> <li>Clases de práctico comenzarán en la cuarta semana.</li></ul> <br/>Objetivos del curso <ul><li>La física es fundamental para carreras científico-tecnológicas. </li><li>Se busca entender y modelar fenómenos naturales.</li><li> Se enfatiza la importancia de asistir a clases de consulta.</li></ul><br/> Evaluación y recursos <ul><li>Se implementará una evaluación mixta (múltiple y desarrollo). </li><li>Material de apoyo incluye filmaciones y transparencias.</li><li> Se recomienda leer el capítulo antes de las clases teóricas.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/3KZ8Azbu_5U",
+          "title": "2019 Clase 01 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
     },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
+    "CinematicaDinamica": {
+      "video2": {
+        "resumen": "Producto Escalar <ul><li>El producto escalar opera entre dos vectores y devuelve un número.<li>Mide cuán paralelos son dos vectores.</li><li>Es nulo si los vectores son ortogonales.</li></li></ul><br/>Ejemplo de Producto Escalar<ul><li>Se utilizan vectores para calcular ángulos de enlace en estructuras moleculares.<li>Se calcula el coseno del ángulo usando el producto escalar.</li></li></ul><br/>Producto Vectorial<ul><li>El producto vectorial devuelve un nuevo vector.<li>Es perpendicular al plano definido por los vectores originales.</li><li>Se utiliza la regla de la mano derecha para determinar el sentido.</li><br/>Aplicaciones<ul><li>El producto vectorial se usa en física para calcular fuerzas y campos.</li><li>La magnitud del producto vectorial se relaciona con el área de un paralelogramo.</li></ul><br/>Ejemplo de Producto Vectorial<ul><li>Se puede calcular usando una matriz para simplificar el proceso.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/qZaP0oainsY",
+          "title": "2019 Clase 02 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video3": {
+        "resumen": "Resumen de la Clase<br/><ul><li>Se revisaron las relaciones integrales en cinemática.</li><li>Se definieron posición, velocidad y aceleración como magnitudes vectoriales.</li><li>Se explicó cómo obtener velocidad y posición a partir de la aceleración mediante integrales.</li><ul><br/><ul><li>Se discutieron dos tipos de movimiento:</li><li><strong>Movimiento Rectilíneo Uniforme (MRU)</strong>: </li><li>Aceleración nula implica velocidad constante.</li><li>La posición se expresa como ( x = x<sub>0</sub> + v<sub>0</sub> t ).</li><li><strong>Movimiento Rectilíneo Uniformemente Acelerado (MRUA)</strong>:</li><li>Aceleración constante distinta de cero.</li><li>La posición se expresa como ( x = x<sub>0</sub> + v<sub>0</sub> t + &#189; a t<sup>2</sup> ).</li><li></ul><br/><ul><li>Se abordó el movimiento de proyectiles:</li><li>Se definieron componentes en ejes x e y.</li><li>Se determinó el alcance máximo a 45&#186;.</li><li>Se realizaron ejemplos prácticos sobre el movimiento de proyectiles en situaciones específicas.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/ZB_G8wdzDyk",
+          "title": "2019 Clase 03 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video4": {
+        "resumen": "Movimiento Circular<ul><li>Se analiza el movimiento circular en un plano con ejes x e y.</li><li>Se utiliza nomenclatura polar para representar posiciones.</li><li>En el movimiento circular uniforme, el ángulo θ cambia de manera constante.La posición se expresa como ( r cos(&#969;t) &#238; ) y ( r sin(&#969;t) &#309; ).</li></ul> <br/>Velocidad y Aceleración<ul><li>La velocidad se obtiene derivando la posición respecto al tiempo.La aceleración es perpendicular al vector de posición.</li><li>La aceleración se expresa como |a|=( &#969;<sup>2</sup> r ).</li></ul><br/>Movimiento Relativo<ul><li>La transformación de Galileo establece que la posición y velocidad son relativas.</li><li>La aceleración puede diferir entre observadores acelerados y no acelerados.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/C38hP4WCoXo",
+          "title": "2019 Clase 04 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video5": {
+        "resumen": "Ejemplo de Cinemática<ul><li>Se aborda la transformación de Galileo para calcular la posición de un cuerpo respecto a otro.</li><li>La posición de A respecto a B se calcula como la posición de A menos la de B.</li><li>Un ejemplo práctico involucra cruzar un río con un bote.</li><li>Se considera la velocidad del agua y la del bote respecto al agua.</li><li>Se busca determinar el ángulo de dirección del bote y el tiempo para cruzar.</li></ul><br/>Conceptos Clave<ul><li>La velocidad del bote respecto al piso se determina usando la transformación de Galileo.</li><li>La aceleración y la fuerza se relacionan mediante la segunda ley de Newton.</li><li>Se discuten marcos de referencia inerciales y no inerciales.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/yyByESx0u7A",
+          "title": "2019 Clase 05 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video6": {
+        "resumen": "Dinámica<ul><li>Se revisaron las leyes de Newton y la importancia de definir el observador.</li><li>Se introdujeron las fuerzas fundamentales: gravitatoria y eléctrica.</li><li>La fuerza gravitatoria se describe mediante la expresión de Newton.</li><li>La fuerza eléctrica se basa en la ley de Coulomb.</li><li>Se discutió la relación entre masa gravitacional y masa inercial.</li><li>Se abordaron las fuerzas derivadas, comenzando con la fuerza elástica.</li><li>La ley de Hooke establece que la fuerza es proporcional a la deformación.</li><li>Se explicaron las fuerzas de rozamiento: estática y cinética.</li><li>La fuerza de rozamiento estática es variable y depende de la fuerza normal.</li><li>La fuerza de rozamiento cinética es constante y se expresa como ( F<sup>&#x20D7;</sup><sub>k</sub> = &#956;<sub>k</sub> N ).</li><li>Se mencionó el rozamiento viscoso en fluidos, que depende de la velocidad y la forma del objeto.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/K9LFLOmD42I",
+          "title": "2019 Clase 06 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video7": {
+        "resumen": "Leyes de Newton<ul><li>Se revisan las leyes de Newton y su aplicación en situaciones físicas.</li><li>Se introduce el concepto de cuerda sin masa como vínculo entre cuerpos.</li><li>La segunda ley de Newton se aplica a sistemas con cuerdas.</li><li>La fuerza en ambos extremos de la cuerda es igual.</li><li>Se discute la deformación de cuerdas y varillas.</li><li>La ley de Hooke relaciona fuerza y deformación.</li><li>Se establece un protocolo para resolver problemas dinámicos.</li><li>Definir el sistema y elegir un marco de referencia adecuado.</li><li>Se analiza el plano inclinado y la influencia del rozamiento en el movimiento.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/IGahMm2FZTQ",
+          "title": "2019 Clase 07 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video8": {
+        "resumen": "<div class=\"hover:bg-red-200  hover:underline hover:font-bold cursor-pointer\">Objetivo de la clase</div><ul class=\"list-disc\"><li>Entender marcos de referencia en rotación.</li><li>Incluir un observador inicial y otro en movimiento acelerado.</li></ul><br/>Observador y aceleración<ul class=\"list-disc\"><li>El observador en movimiento afecta la segunda ley de Newton.</li><li>La aceleración es crucial para el análisis.</li></ul><br/>Transformaciones de Galileo<ul class=\"list-disc\"><li>La distancia medida por el observador depende de la posición relativa.</li><li>Se relacionan las distancias mediante vectores.</li></ul><br/>Segunda ley de Newton<ul class=\"list-disc\"><li>La sumatoria de fuerzas se iguala a la masa por la aceleración.</li><li>Se debe considerar la aceleración del sistema no inercial.</li></ul><br/>Fuerzas complementarias<ul class=\"list-disc\"><li>Se introduce una fuerza adicional para observadores no inerciales.</li><li>La aceleración se calcula considerando fuerzas complementarias.</li></ul> ",
+        "Video": {
+          "url": "https://www.youtube.com/embed/sYBKgltcfWU",
+          "title": "2019 Clase 08 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": "<div class=\"hover:bg-red-200 hover:underline hover:font-bold cursor-pointer rounded-tl-3xl rounded-br-3xl border-2 p-6\">Objetivo de la clase<ul class=\"list-disc\"><li>Entender marcos de referencia en rotación.</li><li>Incluir un observador inicial y otro en movimiento acelerado.</li></ul><br/>Observador y aceleración<ul class=\"list-disc\"><li>El observador en movimiento afecta la segunda ley de Newton.</li><li>La aceleración es crucial para el análisis.</li></ul><br/>Transformaciones de Galileo<ul class=\"list-disc\"><li>La distancia medida por el observador depende de la posición relativa.</li><li>Se relacionan las distancias mediante vectores.</li></ul><br/>Segunda ley de Newton<ul class=\"list-disc\"><li>La sumatoria de fuerzas se iguala a la masa por la aceleración.</li><li>Se debe considerar la aceleración del sistema no inercial.</li></ul><br/>Fuerzas complementarias<ul class=\"list-disc\"><li>Se introduce una fuerza adicional para observadores no inerciales.</li><li>La aceleración se calcula considerando fuerzas complementarias.</li></ul></div>"
+      }
     },
-    "Ecuaciones": ""
-  },
-  "video2": {
-    "resumen": "Producto Escalar <ul><li>El producto escalar opera entre dos vectores y devuelve un número.<li>Mide cuán paralelos son dos vectores.</li><li>Es nulo si los vectores son ortogonales.</li></li></ul><br/>Ejemplo de Producto Escalar<ul><li>Se utilizan vectores para calcular ángulos de enlace en estructuras moleculares.<li>Se calcula el coseno del ángulo usando el producto escalar.</li></li></ul><br/>Producto Vectorial<ul><li>El producto vectorial devuelve un nuevo vector.<li>Es perpendicular al plano definido por los vectores originales.</li><li>Se utiliza la regla de la mano derecha para determinar el sentido.</li><br/>Aplicaciones<ul><li>El producto vectorial se usa en física para calcular fuerzas y campos.</li><li>La magnitud del producto vectorial se relaciona con el área de un paralelogramo.</li></ul><br/>Ejemplo de Producto Vectorial<ul><li>Se puede calcular usando una matriz para simplificar el proceso.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/qZaP0oainsY",
-      "title": "2019 Clase 02 Física 101"
+    "TrabajoEnergia": {
+      "video9": {
+        "resumen": "Pseudofuerzas en sistemas rotacionales<ul><li>Se discutieron dos pseudofuerzas: centrífuga y Coriolis.</li><li>La <strong>centrífuga</strong> depende de la posición respecto al eje de giro.</li><li>La <strong>Coriolis</strong> es más compleja, resultando de un producto vectorial entre velocidad angular y velocidad relativa.</li><li>Se recomendó considerar ambas fuerzas juntas en problemas rotacionales.</li></ul><br/>Ejemplos y aplicaciones<ul><li>Se analizó un sistema en rotación con una canaleta diametral.</li><li>Se introdujo un nuevo ejemplo con canaleta circunferencial.</li><li>Se explicó el efecto de la fuerza de Coriolis en el movimiento de fluidos, como en corrientes oceánicas y huracanes.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/WAAV4bV_QMc",
+          "title": "2019 Clase 09 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video10": {
+        "resumen": "Tema: Energía<ul><li>Se definió el <strong>trabajo</strong> considerando integrales y fuerzas constantes.</li><li>Se analizó un ejemplo de un baúl empujado en un plano inclinado.</li><li>Se calcularon trabajos de:<strong>Fuerza aplicada</strong> y <strong>peso</strong>.</li><li>Se enfatizó la importancia de <strong>diagrama de cuerpo libre</strong>.</li><li>Se introdujo el concepto de <strong>potencia</strong> como trabajo por unidad de tiempo.</li><li>Se discutieron unidades de energía y potencia.</li><li>Se definieron <strong>fuerzas conservativas</strong> y su relación con la <strong>energía potencial</strong>.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/XTd-zYZeT2E",
+          "title": "2019 Clase 10 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video11": {
+        "resumen": "Energía Potencial<ul><li>La energía potencial se relaciona con fuerzas conservativas.</li><li>La integral de la fuerza en un ciclo cerrado debe ser cero.</li><li>Para calcular la energía potencial, se integra la fuerza.</li><li>La derivada de la energía potencial da la fuerza.</li></ul><br/>Ejemplos de Energía Potencial<ul><li>La energía potencial gravitatoria se expresa como mgh.</li><li>La energía potencial elástica se expresa como (1/2)kx².</li></ul><br/>Referencias de Energía<ul><li>La energía potencial es arbitraria y depende de la referencia elegida.</li><li>La energía mecánica se conserva en sistemas sin fuerzas no conservativas.</li></ul><br/>Fuerzas No Conservativas<ul><li>La fuerza magnética no define energía potencial, ya que es perpendicular al desplazamiento.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/cfM3j4lmOwE",
+          "title": "2019 Clase 11 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video12": {
+        "resumen": "Tema de Energía<ul><li><strong>Objetivo</strong>: Terminar el tema de energía y trabajar sobre potenciales.</li><li>Simplificar problemas sin determinar trayectorias.</li><li><strong>Funciones potenciales</strong>: Representan matemáticamente la fuerza.</li><li>Ejemplos: energía potencial gravitatoria y elástica.</li><li><strong>Interacción de partículas</strong>: Potenciales de interacción entre partículas cargadas.</li><li>Ejemplo: sedimentación en agua.</li><li><strong>Movimiento de partículas</strong>: Identificación de mínimos y máximos en funciones potenciales.</li><li>Relación entre energía cinética y potencial.</li><li><strong>Cálculo de tiempos</strong>: Uso de energía para determinar tiempos en sistemas conservativos.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/DSOG3ZGvTEQ",
+          "title": "2019 Clase 12 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
     },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
+    "CantidadMovimientoLineal": {
+      "video13": {
+        "resumen": "Momento Lineal<ul><li>Definición de momento lineal como acumulación de fuerzas en el tiempo.</li><li>Se denomina impulso de una fuerza.</li><li>Conservación del momento lineal en sistemas de partículas.</li><li>Importancia de la cinemática y dinámica del centro de masa.</li><li>Cambios de marcos de referencia: sistemas inerciales y no inerciales.</li></ul><br/>Segunda Ley de Newton<ul><li>La fuerza neta es igual a la derivada del momento lineal.</li><li>La masa puede ser variable en sistemas como cohetes.</li></ul><br/>Impulso<ul><li>El impulso es la integral de la fuerza en el tiempo.</li><li>Relación entre impulso y cambio de momento lineal.</li></ul><br/>Sistema de Partículas<ul><li>El momento lineal total es la suma de los momentos de cada partícula.</li><li>Las fuerzas internas se anulan en la suma total.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/HcoGANS6TI4",
+          "title": "2019 Clase 13 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video14": {
+        "resumen": "Centro de Masa<ul><li>Se desarrolla el concepto de centro de masa en sistemas discretos y continuos.</li><li>Se utiliza la densidad para calcular la masa diferencial en integrales.</li><li>Se calcula la coordenada del centro de masa de un semicírculo.</li><li>Se aplica simetría para ubicar el centro de masa en el eje de simetría.</li><li>Se realizan integrales para determinar la posición del centro de masa.</li><li>Se verifica que el resultado sea dimensionalmente correcto.</li></ul><br/>Ejemplo de Movimiento<ul><li>Se analiza el movimiento de una persona en un bote.</li><li>Se conserva el momento lineal del sistema.</li><li>Se aplica la transformación de Galileo para calcular velocidades relativas.</li><li>Se plantea un balance de fuerzas para encontrar la velocidad final de la plataforma.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/QYok8_aLLE8",
+          "title": "2019 Clase 14 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video15": {
+        "resumen": "Tema: Cantidad de Momento Lineal<ul><li>Se continuó el tema de momento lineal, enfocándose en sistemas de masa variable.</li><li>Se analizó el ejemplo de un cohete y su relación con la conservación del momento lineal.</li><li>La segunda ley de Newton se aplica considerando la derivada del momento lineal respecto al tiempo.</li><li>Se diferenció entre cohetes y motos de agua en términos de masa variable.</li><li>Se planteó la ecuación de movimiento del cohete, considerando la expulsión de gases.</li><li>Se definió el empuje como el producto de la velocidad de los gases y la tasa de variación de masa.</li><li>Se introdujo el concepto de choques y su relación con la conservación de energía y momento lineal.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/-Ik7gCLlXoc",
+          "title": "2019 Clase 15 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video16": {
+        "resumen": "Choques<ul><li>Se retoma el tema de choques, comenzando con el <strong>choque unidimensional</strong>.</li><li>Se define el <strong>choque elástico</strong> y se plantea la conservación de la energía.</li><li>Se utilizan dos ecuaciones para despejar las velocidades finales ( u<sub>1</sub> ) y ( u<sub>2</sub> ).</li><li>Se resuelven ecuaciones no lineales debido a la energía cinética.</li><li>Se introduce el <strong>coeficiente de restitución ( e )</strong> para clasificar los choques.( e = 1 ) para choques elásticos y ( e = 0 ) para choques inelásticos.</li><li>Se discuten ejemplos de choques parcialmente inelásticos y explosivos.</li><li>Se menciona la <strong>conservación del momento lineal</strong> y su relación con la energía.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/eTAH4xGi_QE",
+          "title": "2019 Clase 16 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video17": {
+        "resumen": "Choques Bidimensionales<ul><li>Se estudia el choque en dos dimensiones, considerando dos masas.</li><li>La fuerza normal y su proyección en el plano bidimensional son claves.</li><li>Se plantean ecuaciones para resolver incógnitas de velocidades y ángulos.</li><li>Se considera el choque elástico donde se conserva la energía cinética.</li></ul><br/>Oscilaciones<ul><li>Se introducen las oscilaciones y su importancia en física y química.</li><li>Se analizan sistemas simples como el péndulo y el resorte.</li><li>Se estudia la energía en oscilaciones y se establece la relación entre frecuencia y longitud.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/5j_t9xnw6hk",
+          "title": "2019 Clase 17 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
     },
-    "Ecuaciones": ""
-  },
-  "video3": {
-    "resumen": "Resumen de la Clase<br/><ul><li>Se revisaron las relaciones integrales en cinemática.</li><li>Se definieron posición, velocidad y aceleración como magnitudes vectoriales.</li><li>Se explicó cómo obtener velocidad y posición a partir de la aceleración mediante integrales.</li><ul><br/><ul><li>Se discutieron dos tipos de movimiento:</li><li><strong>Movimiento Rectilíneo Uniforme (MRU)</strong>: </li><li>Aceleración nula implica velocidad constante.</li><li>La posición se expresa como ( x = x<sub>0</sub> + v<sub>0</sub> t ).</li><li><strong>Movimiento Rectilíneo Uniformemente Acelerado (MRUA)</strong>:</li><li>Aceleración constante distinta de cero.</li><li>La posición se expresa como ( x = x<sub>0</sub> + v<sub>0</sub> t + &#189; a t<sup>2</sup> ).</li><li></ul><br/><ul><li>Se abordó el movimiento de proyectiles:</li><li>Se definieron componentes en ejes x e y.</li><li>Se determinó el alcance máximo a 45&#186;.</li><li>Se realizaron ejemplos prácticos sobre el movimiento de proyectiles en situaciones específicas.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/ZB_G8wdzDyk",
-      "title": "2019 Clase 03 Física 101"
+    "Oscilaciones": {
+      "video18": {
+        "resumen": "Oscilaciones<ul><li>Se retoma el sistema masa-resorte y la representación de la fuerza elástica.</li><li>La segunda ley de Newton determina el movimiento del cuerpo.</li><li>La fuerza restauradora debe describirse correctamente.</li><li>La fuerza elástica se calcula en dos pasos:</li><li>Hallar el módulo: ( F = k &#916;x ).</li><li>Asignar el vector: ( F = -k <em>x</em> x̂ ).</li><li>Ejemplos de situaciones con resortes:</li><li>Situación uno: ( x<sub>1</sub> > 0 ) implica fuerza negativa.</li><li>Situación dos: ( x<sub>2</sub> < 0 ) implica fuerza positiva.</li><li>La frecuencia de oscilación depende de la constante de elasticidad y la masa.</li><li>La energía en el oscilador se compone de energía cinética y potencial.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/bruNwBX2jgI",
+          "title": "2019 Clase 18 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video19": {
+        "resumen": "Oscilador libre amortiguado<ul><li>Se revisan las características del movimiento con amortiguador.</li><li>Ecuación diferencial de segundo orden: fuerza elástica menos fuerza viscosa.</li><li>Comparación de &#969;<sub>0</sub> y &#611; determina el tipo de movimiento.</li><li><strong>Subamortiguado</strong>: &#969;<sub>0</sub> > &#611;²/4.</li><li><strong>Críticamente amortiguado</strong>: &#969;<sub>0</sub> = &#611;²/4.</li><li><strong>Sobreamortiguado</strong>: &#969;<sub>0</sub> < &#611;²/4.</li><li>En amortiguamiento débil, la energía decae exponencialmente.</li><li>Se introduce el <strong>factor de calidad</strong> para evaluar la eficiencia del sistema.</li><li>Se analiza el <strong>oscilador forzado</strong> y su respuesta a frecuencias externas.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/UkSgld4uugk",
+          "title": "2019 Clase 19 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video20": {
+        "resumen": "<ul><li>Continuación del tema forzado en oscilaciones con un grado de libertad.</li><li>Análisis de un sistema masa-resorte-amortiguador forzado.</li><li>Se impone un movimiento al sistema que responde con un movimiento complejo.</li><li>Se utiliza la segunda ley de Newton para analizar el movimiento.</li><li>Se establece una ecuación diferencial de segundo orden.</li><li>Se identifican soluciones homogéneas y no homogéneas.</li><li>Se discute la amplitud elástica y la amplitud absorbente.</li><li>Se analiza la dependencia de frecuencia de ambos términos.</li><li>Se define el régimen transitorio y el régimen estacionario.</li><li>En resonancia, la energía potencial y cinética son iguales.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/0OIYEFsRtNk",
+          "title": "2019 Clase 20 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video21": {
+        "resumen": "Oscilaciones Forzadas<ul><li>Se concluye el tema de oscilaciones con un grado de libertad forzado.</li><li>Se analiza el comportamiento del oscilador forzado (masa-resorte-amortiguador) bajo una fuerza variable.</li><li>La potencia se calcula como el producto de fuerza por velocidad.</li><li>La potencia depende del tiempo y se promedia en un período de oscilación.</li><li>Se grafica la potencia media en función de la frecuencia del agente externo.</li><li>Se observa una curva simétrica tipo campana donde la potencia máxima se alcanza a la frecuencia natural de oscilación.</li><li>Se determinan dos frecuencias características, &#969;<sub>+</sub> y &#969;<sub>-</sub>, a partir de la potencia máxima.</li><li>La diferencia entre estas frecuencias permite medir el ancho de la curva, relacionado con el parámetro viscoso &#611;.</li><li>Se introduce el factor de calidad (Q) como cociente entre &#969;<sub>0</sub> y &#611;.</li><li>Se discute la importancia de la resonancia en sistemas mecánicos y eléctricos.</li><li>Se menciona el caso del puente Tacoma, que colapsó por resonancia.</li><li>Se relaciona la resonancia con la espectroscopia y el calentamiento de alimentos en microondas.</li><li>Se concluye que la resonancia maximiza la potencia y la velocidad, no necesariamente la amplitud.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/pOyM7VMcaus",
+          "title": "2019 Clase 21 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "vide22": {
+        "resumen": "Sistema de dos grados de libertad<ul><li>Un sistema de dos grados de libertad requiere dos variables para determinar su posición.</li><li>Ejemplo: dos péndulos representados por ángulos θ1 y θ2.</li><li>Se utiliza un diagrama de cuerpo libre para calcular la fuerza elástica.</li><li>La fuerza elástica se calcula como función de las variables del sistema.</li></ul><br/>Resolución del sistema<ul><li>Se aplican aproximaciones de pequeños ángulos para simplificar las ecuaciones.</li><li>Se obtienen ecuaciones diferenciales de segundo orden acopladas.</li><li>Se busca desacoplar estas ecuaciones para resolver el sistema.</li></ul><br/>Modos normales de oscilación<ul><li>Se identifican dos frecuencias características del sistema.</li><li>ω1 y ω2 dependen de la gravedad y la constante del resorte.</li><li>Las condiciones iniciales determinan las amplitudes y fases de las oscilaciones.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/l7GghkbHNGA",
+          "title": "2019 Clase 22 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
     },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
+    "Rigidos": {
+      "video23": {
+        "resumen": "Repaso de Oscilaciones<ul><li>Se revisa el método determinante para resolver sistemas de ecuaciones diferenciales acopladas no simétricas.</li><li>El método de suma y resta es útil solo para sistemas simétricos.</li><li>Se identifican frecuencias características y se establece un sistema de ecuaciones.</li><li>Se requiere que el determinante de los coeficientes se anule para obtener soluciones no triviales.</li><li>Se discuten las relaciones de amplitud y cómo se determinan a partir de las condiciones iniciales.</li><li>Se enfatiza la importancia de practicar el método sistemático para resolver problemas de oscilaciones.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/An58-rCv6Jo",
+          "title": "2019 Clase 23 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video24": {
+        "resumen": "Dinámica Rotacional<ul><li>El <strong>torque</strong> se define como el producto de la fuerza por la distancia al eje de rotación.</li><li>Cuanto más alejada se aplique la fuerza, mayor será el efecto del torque.</li><li>La orientación de la fuerza también es crucial.</li><li>Fuerzas perpendiculares generan mayor torque que fuerzas paralelas.</li><li>El producto vectorial es esencial para calcular el torque.</li><li>Torque = r × F, donde r es el vector de posición y F es la fuerza aplicada.</li><li>El momento de inercia depende de la distribución de la masa respecto al eje de giro.</li><li>Momentos de inercia se suman para sistemas compuestos.</li><li>Ejemplos incluyen el cálculo de inercia para discos y varillas.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/dTIuRvyFgbU",
+          "title": "2019 Clase 24 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video25": {
+        "resumen": "Teorema de Steiner<ul><li>El momento de inercia depende del eje y su posición.</li><li>Se utiliza el teorema de los ejes paralelos para calcularlo.</li><li>Para un eje paralelo al centro de masa:</li><li>( <em>I</em><sub>z</sub> = <em>I</em><sub>cm </sub>+ Md<sup>2</sup> ) (d: distancia entre ejes).</li></ul><br/>Figuras Planas<ul><li>Para figuras planas, el espesor debe ser menor que el radio.</li><li>La inercia se calcula como ( <em>I</em><sub>z</sub> = <em>I</em><sub>x</sub> + <em>I</em><sub>y</sub> ).</li></ul><br/>Conservación del Momento Angular<ul><li>El momento angular se conserva si no hay torque externo.</li><li>Ejemplo: una persona en una silla giratoria ajusta su velocidad al acercar o alejar las masas.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/afmzSh7E88Y",
+          "title": "2019 Clase 25 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video26": {
+        "resumen": "<ul><li>Conservación del momento angular se aplica en sistemas sin fuerzas externas.</li><li>Torque externo cero implica momento angular constante.</li><li>Paradoja del solenoide de Richard Feynman: resistencia genera radiación electromagnética.</li><li>Fotones transportan momento angular.</li><li>Ejemplo de una cucaracha en un plato giratorio: se detiene y afecta la velocidad angular del plato.</li><li><strong>Rodadura pura</strong>: equilibrio entre traslación y rotación.</li><li>Fuerza de rozamiento se determina por la velocidad del punto de contacto.</li><li>Ecuaciones de movimiento: b(t) y ω(t) se igualan en el tiempo de rodadura pura.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/g46-k1SMp2Y",
+          "title": "2019 Clase 26 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video27": {
+        "resumen": "Análisis de Rodadura<ul><li>Se estudia el giro y la traslación de un cuerpo rígido.</li><li>El equilibrio se logra cuando las velocidades se igualan.</li><li>La rodadura pura se alcanza cuando la velocidad de rodadura es igual a la velocidad angular por el radio.</li><li>Se detiene la pérdida de energía al cambiar de fricción cinética a estática.</li></ul><br/>Pérdida de Energía<ul><li>Se calcula la energía disipada durante el deslizamiento.</li><li>La fuerza de rozamiento afecta el desplazamiento del punto de contacto.</li></ul><br/>Condiciones de Rodadura<ul><li>La fuerza de rozamiento estática debe ser suficiente para mantener la rodadura pura.</li><li>Se verifica que la fuerza teórica no exceda la máxima permitida por la superficie.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/KnHs_yg6lAM",
+          "title": "2019 Clase 27 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      },
+      "video28": {
+        "resumen": "Resumen de la Clase<ul><li>Fludinámica y calor no serán evaluados en el control.</li><li>Se analiza el movimiento de un disco sobre un plano horizontal.</li><li>Se utiliza la conservación del momento angular para simplificar el análisis.</li><li>Se discute la fuerza de roce cinético y su efecto en el movimiento.</li><li>La conservación del momento angular depende del punto de referencia.</li><li>En el centro de masa, el torque de la fuerza de roce es significativo.</li><li>En el punto de contacto, el torque es cero.</li><li>Se establece la relación entre velocidad lineal y angular en rodadura pura.</li><li>Se concluye que la velocidad final de rodadura pura es 2/3 de la velocidad inicial.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/8XYrmULcNNc",
+          "title": "2019 Clase 28 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
     },
-    "Ecuaciones": ""
-  },
-  "video4": {
-    "resumen": "Movimiento Circular<ul><li>Se analiza el movimiento circular en un plano con ejes x e y.</li><li>Se utiliza nomenclatura polar para representar posiciones.</li><li>En el movimiento circular uniforme, el ángulo θ cambia de manera constante.La posición se expresa como ( r cos(&#969;t) &#238; ) y ( r sin(&#969;t) &#309; ).</li></ul> <br/>Velocidad y Aceleración<ul><li>La velocidad se obtiene derivando la posición respecto al tiempo.La aceleración es perpendicular al vector de posición.</li><li>La aceleración se expresa como |a|=( &#969;<sup>2</sup> r ).</li></ul><br/>Movimiento Relativo<ul><li>La transformación de Galileo establece que la posición y velocidad son relativas.</li><li>La aceleración puede diferir entre observadores acelerados y no acelerados.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/C38hP4WCoXo",
-      "title": "2019 Clase 04 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video5": {
-    "resumen": "Ejemplo de Cinemática<ul><li>Se aborda la transformación de Galileo para calcular la posición de un cuerpo respecto a otro.</li><li>La posición de A respecto a B se calcula como la posición de A menos la de B.</li><li>Un ejemplo práctico involucra cruzar un río con un bote.</li><li>Se considera la velocidad del agua y la del bote respecto al agua.</li><li>Se busca determinar el ángulo de dirección del bote y el tiempo para cruzar.</li></ul><br/>Conceptos Clave<ul><li>La velocidad del bote respecto al piso se determina usando la transformación de Galileo.</li><li>La aceleración y la fuerza se relacionan mediante la segunda ley de Newton.</li><li>Se discuten marcos de referencia inerciales y no inerciales.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/yyByESx0u7A",
-      "title": "2019 Clase 05 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video6": {
-    "resumen": "Dinámica<ul><li>Se revisaron las leyes de Newton y la importancia de definir el observador.</li><li>Se introdujeron las fuerzas fundamentales: gravitatoria y eléctrica.</li><li>La fuerza gravitatoria se describe mediante la expresión de Newton.</li><li>La fuerza eléctrica se basa en la ley de Coulomb.</li><li>Se discutió la relación entre masa gravitacional y masa inercial.</li><li>Se abordaron las fuerzas derivadas, comenzando con la fuerza elástica.</li><li>La ley de Hooke establece que la fuerza es proporcional a la deformación.</li><li>Se explicaron las fuerzas de rozamiento: estática y cinética.</li><li>La fuerza de rozamiento estática es variable y depende de la fuerza normal.</li><li>La fuerza de rozamiento cinética es constante y se expresa como ( F<sup>&#x20D7;</sup><sub>k</sub> = &#956;<sub>k</sub> N ).</li><li>Se mencionó el rozamiento viscoso en fluidos, que depende de la velocidad y la forma del objeto.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/K9LFLOmD42I",
-      "title": "2019 Clase 06 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video7": {
-    "resumen": "Leyes de Newton<ul><li>Se revisan las leyes de Newton y su aplicación en situaciones físicas.</li><li>Se introduce el concepto de cuerda sin masa como vínculo entre cuerpos.</li><li>La segunda ley de Newton se aplica a sistemas con cuerdas.</li><li>La fuerza en ambos extremos de la cuerda es igual.</li><li>Se discute la deformación de cuerdas y varillas.</li><li>La ley de Hooke relaciona fuerza y deformación.</li><li>Se establece un protocolo para resolver problemas dinámicos.</li><li>Definir el sistema y elegir un marco de referencia adecuado.</li><li>Se analiza el plano inclinado y la influencia del rozamiento en el movimiento.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/IGahMm2FZTQ",
-      "title": "2019 Clase 07 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video8": {
-    "resumen": "<div class=\"hover:bg-red-200  hover:underline hover:font-bold cursor-pointer\">Objetivo de la clase</div><ul class=\"list-disc\"><li>Entender marcos de referencia en rotación.</li><li>Incluir un observador inicial y otro en movimiento acelerado.</li></ul><br/>Observador y aceleración<ul class=\"list-disc\"><li>El observador en movimiento afecta la segunda ley de Newton.</li><li>La aceleración es crucial para el análisis.</li></ul><br/>Transformaciones de Galileo<ul class=\"list-disc\"><li>La distancia medida por el observador depende de la posición relativa.</li><li>Se relacionan las distancias mediante vectores.</li></ul><br/>Segunda ley de Newton<ul class=\"list-disc\"><li>La sumatoria de fuerzas se iguala a la masa por la aceleración.</li><li>Se debe considerar la aceleración del sistema no inercial.</li></ul><br/>Fuerzas complementarias<ul class=\"list-disc\"><li>Se introduce una fuerza adicional para observadores no inerciales.</li><li>La aceleración se calcula considerando fuerzas complementarias.</li></ul> ",
-    "Video": {
-      "url": "https://www.youtube.com/embed/sYBKgltcfWU",
-      "title": "2019 Clase 08 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": "<div class=\"hover:bg-red-200 hover:underline hover:font-bold cursor-pointer rounded-tl-3xl rounded-br-3xl border-2 p-6\">Objetivo de la clase<ul class=\"list-disc\"><li>Entender marcos de referencia en rotación.</li><li>Incluir un observador inicial y otro en movimiento acelerado.</li></ul><br/>Observador y aceleración<ul class=\"list-disc\"><li>El observador en movimiento afecta la segunda ley de Newton.</li><li>La aceleración es crucial para el análisis.</li></ul><br/>Transformaciones de Galileo<ul class=\"list-disc\"><li>La distancia medida por el observador depende de la posición relativa.</li><li>Se relacionan las distancias mediante vectores.</li></ul><br/>Segunda ley de Newton<ul class=\"list-disc\"><li>La sumatoria de fuerzas se iguala a la masa por la aceleración.</li><li>Se debe considerar la aceleración del sistema no inercial.</li></ul><br/>Fuerzas complementarias<ul class=\"list-disc\"><li>Se introduce una fuerza adicional para observadores no inerciales.</li><li>La aceleración se calcula considerando fuerzas complementarias.</li></ul></div>"
-  },
-  "video9": {
-    "resumen": "Pseudofuerzas en sistemas rotacionales<ul><li>Se discutieron dos pseudofuerzas: centrífuga y Coriolis.</li><li>La <strong>centrífuga</strong> depende de la posición respecto al eje de giro.</li><li>La <strong>Coriolis</strong> es más compleja, resultando de un producto vectorial entre velocidad angular y velocidad relativa.</li><li>Se recomendó considerar ambas fuerzas juntas en problemas rotacionales.</li></ul><br/>Ejemplos y aplicaciones<ul><li>Se analizó un sistema en rotación con una canaleta diametral.</li><li>Se introdujo un nuevo ejemplo con canaleta circunferencial.</li><li>Se explicó el efecto de la fuerza de Coriolis en el movimiento de fluidos, como en corrientes oceánicas y huracanes.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/WAAV4bV_QMc",
-      "title": "2019 Clase 09 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video10": {
-    "resumen": "Tema: Energía<ul><li>Se definió el <strong>trabajo</strong> considerando integrales y fuerzas constantes.</li><li>Se analizó un ejemplo de un baúl empujado en un plano inclinado.</li><li>Se calcularon trabajos de:<strong>Fuerza aplicada</strong> y <strong>peso</strong>.</li><li>Se enfatizó la importancia de <strong>diagrama de cuerpo libre</strong>.</li><li>Se introdujo el concepto de <strong>potencia</strong> como trabajo por unidad de tiempo.</li><li>Se discutieron unidades de energía y potencia.</li><li>Se definieron <strong>fuerzas conservativas</strong> y su relación con la <strong>energía potencial</strong>.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/XTd-zYZeT2E",
-      "title": "2019 Clase 10 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video11": {
-    "resumen": "Energía Potencial<ul><li>La energía potencial se relaciona con fuerzas conservativas.</li><li>La integral de la fuerza en un ciclo cerrado debe ser cero.</li><li>Para calcular la energía potencial, se integra la fuerza.</li><li>La derivada de la energía potencial da la fuerza.</li></ul><br/>Ejemplos de Energía Potencial<ul><li>La energía potencial gravitatoria se expresa como mgh.</li><li>La energía potencial elástica se expresa como (1/2)kx².</li></ul><br/>Referencias de Energía<ul><li>La energía potencial es arbitraria y depende de la referencia elegida.</li><li>La energía mecánica se conserva en sistemas sin fuerzas no conservativas.</li></ul><br/>Fuerzas No Conservativas<ul><li>La fuerza magnética no define energía potencial, ya que es perpendicular al desplazamiento.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/cfM3j4lmOwE",
-      "title": "2019 Clase 11 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video12": {
-    "resumen": "Tema de Energía<ul><li><strong>Objetivo</strong>: Terminar el tema de energía y trabajar sobre potenciales.</li><li>Simplificar problemas sin determinar trayectorias.</li><li><strong>Funciones potenciales</strong>: Representan matemáticamente la fuerza.</li><li>Ejemplos: energía potencial gravitatoria y elástica.</li><li><strong>Interacción de partículas</strong>: Potenciales de interacción entre partículas cargadas.</li><li>Ejemplo: sedimentación en agua.</li><li><strong>Movimiento de partículas</strong>: Identificación de mínimos y máximos en funciones potenciales.</li><li>Relación entre energía cinética y potencial.</li><li><strong>Cálculo de tiempos</strong>: Uso de energía para determinar tiempos en sistemas conservativos.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/DSOG3ZGvTEQ",
-      "title": "2019 Clase 12 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video13": {
-    "resumen": "Momento Lineal<ul><li>Definición de momento lineal como acumulación de fuerzas en el tiempo.</li><li>Se denomina impulso de una fuerza.</li><li>Conservación del momento lineal en sistemas de partículas.</li><li>Importancia de la cinemática y dinámica del centro de masa.</li><li>Cambios de marcos de referencia: sistemas inerciales y no inerciales.</li></ul><br/>Segunda Ley de Newton<ul><li>La fuerza neta es igual a la derivada del momento lineal.</li><li>La masa puede ser variable en sistemas como cohetes.</li></ul><br/>Impulso<ul><li>El impulso es la integral de la fuerza en el tiempo.</li><li>Relación entre impulso y cambio de momento lineal.</li></ul><br/>Sistema de Partículas<ul><li>El momento lineal total es la suma de los momentos de cada partícula.</li><li>Las fuerzas internas se anulan en la suma total.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/HcoGANS6TI4",
-      "title": "2019 Clase 13 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video14": {
-    "resumen": "Centro de Masa<ul><li>Se desarrolla el concepto de centro de masa en sistemas discretos y continuos.</li><li>Se utiliza la densidad para calcular la masa diferencial en integrales.</li><li>Se calcula la coordenada del centro de masa de un semicírculo.</li><li>Se aplica simetría para ubicar el centro de masa en el eje de simetría.</li><li>Se realizan integrales para determinar la posición del centro de masa.</li><li>Se verifica que el resultado sea dimensionalmente correcto.</li></ul><br/>Ejemplo de Movimiento<ul><li>Se analiza el movimiento de una persona en un bote.</li><li>Se conserva el momento lineal del sistema.</li><li>Se aplica la transformación de Galileo para calcular velocidades relativas.</li><li>Se plantea un balance de fuerzas para encontrar la velocidad final de la plataforma.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/QYok8_aLLE8",
-      "title": "2019 Clase 14 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video15": {
-    "resumen": "Tema: Cantidad de Momento Lineal<ul><li>Se continuó el tema de momento lineal, enfocándose en sistemas de masa variable.</li><li>Se analizó el ejemplo de un cohete y su relación con la conservación del momento lineal.</li><li>La segunda ley de Newton se aplica considerando la derivada del momento lineal respecto al tiempo.</li><li>Se diferenció entre cohetes y motos de agua en términos de masa variable.</li><li>Se planteó la ecuación de movimiento del cohete, considerando la expulsión de gases.</li><li>Se definió el empuje como el producto de la velocidad de los gases y la tasa de variación de masa.</li><li>Se introdujo el concepto de choques y su relación con la conservación de energía y momento lineal.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/-Ik7gCLlXoc",
-      "title": "2019 Clase 15 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video16": {
-    "resumen": "Choques<ul><li>Se retoma el tema de choques, comenzando con el <strong>choque unidimensional</strong>.</li><li>Se define el <strong>choque elástico</strong> y se plantea la conservación de la energía.</li><li>Se utilizan dos ecuaciones para despejar las velocidades finales ( u<sub>1</sub> ) y ( u<sub>2</sub> ).</li><li>Se resuelven ecuaciones no lineales debido a la energía cinética.</li><li>Se introduce el <strong>coeficiente de restitución ( e )</strong> para clasificar los choques.( e = 1 ) para choques elásticos y ( e = 0 ) para choques inelásticos.</li><li>Se discuten ejemplos de choques parcialmente inelásticos y explosivos.</li><li>Se menciona la <strong>conservación del momento lineal</strong> y su relación con la energía.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/eTAH4xGi_QE",
-      "title": "2019 Clase 16 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video17": {
-    "resumen": "Choques Bidimensionales<ul><li>Se estudia el choque en dos dimensiones, considerando dos masas.</li><li>La fuerza normal y su proyección en el plano bidimensional son claves.</li><li>Se plantean ecuaciones para resolver incógnitas de velocidades y ángulos.</li><li>Se considera el choque elástico donde se conserva la energía cinética.</li></ul><br/>Oscilaciones<ul><li>Se introducen las oscilaciones y su importancia en física y química.</li><li>Se analizan sistemas simples como el péndulo y el resorte.</li><li>Se estudia la energía en oscilaciones y se establece la relación entre frecuencia y longitud.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/5j_t9xnw6hk",
-      "title": "2019 Clase 17 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video18": {
-    "resumen": "Oscilaciones<ul><li>Se retoma el sistema masa-resorte y la representación de la fuerza elástica.</li><li>La segunda ley de Newton determina el movimiento del cuerpo.</li><li>La fuerza restauradora debe describirse correctamente.</li><li>La fuerza elástica se calcula en dos pasos:</li><li>Hallar el módulo: ( F = k &#916;x ).</li><li>Asignar el vector: ( F = -k <em>x</em> x̂ ).</li><li>Ejemplos de situaciones con resortes:</li><li>Situación uno: ( x<sub>1</sub> > 0 ) implica fuerza negativa.</li><li>Situación dos: ( x<sub>2</sub> < 0 ) implica fuerza positiva.</li><li>La frecuencia de oscilación depende de la constante de elasticidad y la masa.</li><li>La energía en el oscilador se compone de energía cinética y potencial.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/bruNwBX2jgI",
-      "title": "2019 Clase 18 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video19": {
-    "resumen": "Oscilador libre amortiguado<ul><li>Se revisan las características del movimiento con amortiguador.</li><li>Ecuación diferencial de segundo orden: fuerza elástica menos fuerza viscosa.</li><li>Comparación de &#969;<sub>0</sub> y &#611; determina el tipo de movimiento.</li><li><strong>Subamortiguado</strong>: &#969;<sub>0</sub> > &#611;²/4.</li><li><strong>Críticamente amortiguado</strong>: &#969;<sub>0</sub> = &#611;²/4.</li><li><strong>Sobreamortiguado</strong>: &#969;<sub>0</sub> < &#611;²/4.</li><li>En amortiguamiento débil, la energía decae exponencialmente.</li><li>Se introduce el <strong>factor de calidad</strong> para evaluar la eficiencia del sistema.</li><li>Se analiza el <strong>oscilador forzado</strong> y su respuesta a frecuencias externas.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/UkSgld4uugk",
-      "title": "2019 Clase 19 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video20": {
-    "resumen": "<ul><li>Continuación del tema forzado en oscilaciones con un grado de libertad.</li><li>Análisis de un sistema masa-resorte-amortiguador forzado.</li><li>Se impone un movimiento al sistema que responde con un movimiento complejo.</li><li>Se utiliza la segunda ley de Newton para analizar el movimiento.</li><li>Se establece una ecuación diferencial de segundo orden.</li><li>Se identifican soluciones homogéneas y no homogéneas.</li><li>Se discute la amplitud elástica y la amplitud absorbente.</li><li>Se analiza la dependencia de frecuencia de ambos términos.</li><li>Se define el régimen transitorio y el régimen estacionario.</li><li>En resonancia, la energía potencial y cinética son iguales.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/0OIYEFsRtNk",
-      "title": "2019 Clase 20 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video21": {
-    "resumen": "Oscilaciones Forzadas<ul><li>Se concluye el tema de oscilaciones con un grado de libertad forzado.</li><li>Se analiza el comportamiento del oscilador forzado (masa-resorte-amortiguador) bajo una fuerza variable.</li><li>La potencia se calcula como el producto de fuerza por velocidad.</li><li>La potencia depende del tiempo y se promedia en un período de oscilación.</li><li>Se grafica la potencia media en función de la frecuencia del agente externo.</li><li>Se observa una curva simétrica tipo campana donde la potencia máxima se alcanza a la frecuencia natural de oscilación.</li><li>Se determinan dos frecuencias características, &#969;<sub>+</sub> y &#969;<sub>-</sub>, a partir de la potencia máxima.</li><li>La diferencia entre estas frecuencias permite medir el ancho de la curva, relacionado con el parámetro viscoso &#611;.</li><li>Se introduce el factor de calidad (Q) como cociente entre &#969;<sub>0</sub> y &#611;.</li><li>Se discute la importancia de la resonancia en sistemas mecánicos y eléctricos.</li><li>Se menciona el caso del puente Tacoma, que colapsó por resonancia.</li><li>Se relaciona la resonancia con la espectroscopia y el calentamiento de alimentos en microondas.</li><li>Se concluye que la resonancia maximiza la potencia y la velocidad, no necesariamente la amplitud.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/pOyM7VMcaus",
-      "title": "2019 Clase 21 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "vide22": {
-    "resumen": "Sistema de dos grados de libertad<ul><li>Un sistema de dos grados de libertad requiere dos variables para determinar su posición.</li><li>Ejemplo: dos péndulos representados por ángulos θ1 y θ2.</li><li>Se utiliza un diagrama de cuerpo libre para calcular la fuerza elástica.</li><li>La fuerza elástica se calcula como función de las variables del sistema.</li></ul><br/>Resolución del sistema<ul><li>Se aplican aproximaciones de pequeños ángulos para simplificar las ecuaciones.</li><li>Se obtienen ecuaciones diferenciales de segundo orden acopladas.</li><li>Se busca desacoplar estas ecuaciones para resolver el sistema.</li></ul><br/>Modos normales de oscilación<ul><li>Se identifican dos frecuencias características del sistema.</li><li>ω1 y ω2 dependen de la gravedad y la constante del resorte.</li><li>Las condiciones iniciales determinan las amplitudes y fases de las oscilaciones.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/l7GghkbHNGA",
-      "title": "2019 Clase 22 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video23": {
-    "resumen": "Repaso de Oscilaciones<ul><li>Se revisa el método determinante para resolver sistemas de ecuaciones diferenciales acopladas no simétricas.</li><li>El método de suma y resta es útil solo para sistemas simétricos.</li><li>Se identifican frecuencias características y se establece un sistema de ecuaciones.</li><li>Se requiere que el determinante de los coeficientes se anule para obtener soluciones no triviales.</li><li>Se discuten las relaciones de amplitud y cómo se determinan a partir de las condiciones iniciales.</li><li>Se enfatiza la importancia de practicar el método sistemático para resolver problemas de oscilaciones.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/An58-rCv6Jo",
-      "title": "2019 Clase 23 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video24": {
-    "resumen": "Dinámica Rotacional<ul><li>El <strong>torque</strong> se define como el producto de la fuerza por la distancia al eje de rotación.</li><li>Cuanto más alejada se aplique la fuerza, mayor será el efecto del torque.</li><li>La orientación de la fuerza también es crucial.</li><li>Fuerzas perpendiculares generan mayor torque que fuerzas paralelas.</li><li>El producto vectorial es esencial para calcular el torque.</li><li>Torque = r × F, donde r es el vector de posición y F es la fuerza aplicada.</li><li>El momento de inercia depende de la distribución de la masa respecto al eje de giro.</li><li>Momentos de inercia se suman para sistemas compuestos.</li><li>Ejemplos incluyen el cálculo de inercia para discos y varillas.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/dTIuRvyFgbU",
-      "title": "2019 Clase 24 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video25": {
-    "resumen": "Teorema de Steiner<ul><li>El momento de inercia depende del eje y su posición.</li><li>Se utiliza el teorema de los ejes paralelos para calcularlo.</li><li>Para un eje paralelo al centro de masa:</li><li>( <em>I</em><sub>z</sub> = <em>I</em><sub>cm </sub>+ Md<sup>2</sup> ) (d: distancia entre ejes).</li></ul><br/>Figuras Planas<ul><li>Para figuras planas, el espesor debe ser menor que el radio.</li><li>La inercia se calcula como ( <em>I</em><sub>z</sub> = <em>I</em><sub>x</sub> + <em>I</em><sub>y</sub> ).</li></ul><br/>Conservación del Momento Angular<ul><li>El momento angular se conserva si no hay torque externo.</li><li>Ejemplo: una persona en una silla giratoria ajusta su velocidad al acercar o alejar las masas.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/afmzSh7E88Y",
-      "title": "2019 Clase 25 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video26": {
-    "resumen": "<ul><li>Conservación del momento angular se aplica en sistemas sin fuerzas externas.</li><li>Torque externo cero implica momento angular constante.</li><li>Paradoja del solenoide de Richard Feynman: resistencia genera radiación electromagnética.</li><li>Fotones transportan momento angular.</li><li>Ejemplo de una cucaracha en un plato giratorio: se detiene y afecta la velocidad angular del plato.</li><li><strong>Rodadura pura</strong>: equilibrio entre traslación y rotación.</li><li>Fuerza de rozamiento se determina por la velocidad del punto de contacto.</li><li>Ecuaciones de movimiento: b(t) y ω(t) se igualan en el tiempo de rodadura pura.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/g46-k1SMp2Y",
-      "title": "2019 Clase 26 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video27": {
-    "resumen": "Análisis de Rodadura<ul><li>Se estudia el giro y la traslación de un cuerpo rígido.</li><li>El equilibrio se logra cuando las velocidades se igualan.</li><li>La rodadura pura se alcanza cuando la velocidad de rodadura es igual a la velocidad angular por el radio.</li><li>Se detiene la pérdida de energía al cambiar de fricción cinética a estática.</li></ul><br/>Pérdida de Energía<ul><li>Se calcula la energía disipada durante el deslizamiento.</li><li>La fuerza de rozamiento afecta el desplazamiento del punto de contacto.</li></ul><br/>Condiciones de Rodadura<ul><li>La fuerza de rozamiento estática debe ser suficiente para mantener la rodadura pura.</li><li>Se verifica que la fuerza teórica no exceda la máxima permitida por la superficie.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/KnHs_yg6lAM",
-      "title": "2019 Clase 27 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
-  },
-  "video28": {
-    "resumen": "Resumen de la Clase<ul><li>Fludinámica y calor no serán evaluados en el control.</li><li>Se analiza el movimiento de un disco sobre un plano horizontal.</li><li>Se utiliza la conservación del momento angular para simplificar el análisis.</li><li>Se discute la fuerza de roce cinético y su efecto en el movimiento.</li><li>La conservación del momento angular depende del punto de referencia.</li><li>En el centro de masa, el torque de la fuerza de roce es significativo.</li><li>En el punto de contacto, el torque es cero.</li><li>Se establece la relación entre velocidad lineal y angular en rodadura pura.</li><li>Se concluye que la velocidad final de rodadura pura es 2/3 de la velocidad inicial.</li></ul>",
-    "Video": {
-      "url": "https://www.youtube.com/embed/8XYrmULcNNc",
-      "title": "2019 Clase 28 Física 101"
-    },
-    "Image": {
-      "src": "",
-      "title": "",
-      "alt": ""
-    },
-    "Ecuaciones": ""
+    "FluidosCalor": {}
   }
 }

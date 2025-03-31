@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "./datos.json";
 
 // Clase Contenido
@@ -54,43 +54,60 @@ class Contenido {
 
 // Define el tipo del JSON para evitar errores en TypeScript
 interface DataJSON {
-  [key: string]: {
-    resumen: string;
-    Video: {
-      url: string;
-      title: string;
+  temas: {
+    [key: string]: {
+      [key: string]: {
+        resumen: string;
+        Video: {
+          url: string;
+          title: string;
+        };
+        Image: {
+          src: string;
+          title: string;
+          alt: string;
+        };
+        Ecuaciones: string;
+      };
     };
-    Image: {
-      src: string;
-      title: string;
-      alt: string;
-    };
-    Ecuaciones: string;
   };
 }
 
 // Tipar los datos JSON importados
 const jsonData: DataJSON = data;
-
 // Mapeo del JSON a instancias de Contenido
-const contenidos = Object.keys(jsonData).map((key) => {
-  const item = jsonData[key];
-  return new Contenido(
-    item.resumen,
-    [item.Video.url, item.Video.title],
-    [item.Image.src, item.Image.alt, item.Image.title],
-    item.Ecuaciones
-  );
-});
+// const contenidos = Object.keys(jsonData.temas).map((key) => {
+//   const contenidosTemas = Object.keys(jsonData.temas[key]).map((llave) => {
+//     const item = jsonData.temas[key][llave];
+//     return new Contenido(
+//       item.resumen,
+//       [item.Video.url, item.Video.title],
+//       [item.Image.src, item.Image.alt, item.Image.title],
+//       item.Ecuaciones
+//     );
+//   });
+//   return contenidosTemas;
+// });
 
 // Componente principal
 function Bento2() {
+  const [tema, setTema] = useState("TrabajoEnergia");
+
+  const contenidos = Object.keys(jsonData.temas[tema]).map((llave) => {
+    const item = jsonData.temas[tema][llave];
+    return new Contenido(
+      item.resumen,
+      [item.Video.url, item.Video.title],
+      [item.Image.src, item.Image.alt, item.Image.title],
+      item.Ecuaciones
+    );
+  });
   return (
-    <div>
-      {contenidos.map((contenido, index) => (
-        <div key={index}>{contenido.mostrarContenido()}</div>
-      ))}
-    </div>
+    <>
+      {contenidos.map((contenido, index) => {
+        return <div key={index}>{contenido.mostrarContenido()}</div>;
+      })}
+    </>
   );
 }
 
