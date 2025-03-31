@@ -104,6 +104,22 @@ function Bento2() {
   });
   return (
     <>
+      <div className="flex justify-around items-center flex-wrap fixed top-0 bg-white/30 backdrop-blur-sm w-full p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+        <button onClick={() => setTema("Generalidades")}>Generalidades</button>
+        <button onClick={() => setTema("CinematicaDinamica")}>
+          Cinematica y Dinamica
+        </button>
+        <button onClick={() => setTema("TrabajoEnergia")}>
+          Trabajo y Energia
+        </button>
+        <button onClick={() => setTema("CantidadMovimientoLineal")}>
+          Cantidad de Movimiento Lineal
+        </button>
+        <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
+        <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
+        <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+      </div>
+
       {contenidos.map((contenido, index) => {
         return <div key={index}>{contenido.mostrarContenido()}</div>;
       })}
