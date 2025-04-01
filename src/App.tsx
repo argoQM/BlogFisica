@@ -1,4 +1,4 @@
-import Bento from "./Components/Bento";
+// import Bento from "./Components/Bento";
 import "./App.css";
 import Bento2 from "./Components/Bento2";
 
