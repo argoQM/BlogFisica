@@ -1,105 +1,107 @@
-import React from "react";
-interface infoJson {
+import datos from "./informacionCursoFisica101.json";
+interface InfoJSON {
   sector1: {
-    caracterObjetivos: "";
+    caracterObjetivos: string;
     comienzo: {
-      fecha: "";
+      fecha: string;
       teorico: {
-        dias: "";
-        lugar: "";
+        dias: string;
+        lugar: string;
       };
-      practico: "";
-      talleres: "";
+      practico: string;
+      talleres: string;
       consultas: {
-        horario: "";
-        lugar: "";
+        horario: string;
+        lugar: string;
       };
     };
   };
   sector2: {
     horarios: {
-      src: "";
-      title: "Horarios";
-      alt: "Imagen de los horarios";
+      src: string;
+      title: string;
+      alt: string;
     };
     talleres: {
       informacion: {
-        obligatoriedad: "";
-        presencialidad: "";
-        totalTalleres: "";
-        GananciaEvaluacion: "";
-        puntajeMaximo: "";
+        obligatoriedad: string;
+        presencialidad: string;
+        totalTalleres: string;
+        GananciaEvaluacion: string;
+        puntajeMaximo: string;
       };
       grupos: {
         grupo1: {
-          dia: "";
-          horario: "";
-          lugar: "";
+          dia: string;
+          horario: string;
+          lugar: string;
         };
         grupo2: {
-          dia: "";
-          horario: "";
-          lugar: "";
+          dia: string;
+          horario: string;
+          lugar: string;
         };
         grupo3: {
-          dia: "";
-          horario: "";
-          lugar: "";
+          dia: string;
+          horario: string;
+          lugar: string;
         };
         grupo4: {
-          dia: "";
-          horario: "";
-          lugar: "";
+          dia: string;
+          horario: string;
+          lugar: string;
         };
         grupo5: {
-          dia: "";
-          horario: "";
-          lugar: "";
+          dia: string;
+          horario: string;
+          lugar: string;
         };
       };
     };
     cronograma: {
-      src: "";
-      title: "Cronograma";
-      alt: "Imagen del cronograma";
+      src: string;
+      title: string;
+      alt: string;
     };
   };
   sector3: {
     descargables: {
       informacionCurso: {
-        titulo: "";
+        titulo: string;
         programa: {
-          label: "";
-          src: "";
+          label: string;
+          src: string;
         };
         estructura: {
-          label: "";
-          src: "";
+          label: string;
+          src: string;
         };
       };
       materiales: {
-        titulo: "";
+        titulo: string;
         libro: {
-          label: "";
-          src: "";
+          label: string;
+          src: string;
         };
         formulas: {
-          label: "";
-          src: "";
+          label: string;
+          src: string;
         };
       };
       simulaciones: {
         web1: {
-          src: "";
+          src: string;
         };
         web2: {
-          src: "";
+          src: string;
         };
       };
     };
     cartelera: {};
   };
 }
+//Variables
+const dataInfoJSON: InfoJSON = datos;
 function Information() {
   return (
     <>
@@ -114,7 +116,12 @@ function Information() {
         </h1>
         <div className="p-4">
           <div className="bg-green-300 p-2 flex gap-4">
-            <div className="w-1/2 bg-red-300 p-2">Caracter y Objetivos</div>
+            <div
+              className="w-1/2 bg-red-300 p-2"
+              dangerouslySetInnerHTML={{
+                __html: dataInfoJSON.sector1.caracterObjetivos,
+              }}
+            ></div>
             <div className="w-1/2 bg-violet-300 p-2">
               <div className="flex justify-around gap-2">
                 <div className="bg-amber-300 w-1/2 p-2">Teoricos</div>
