@@ -1,110 +1,177 @@
-function Bento() {
-  class Contenido {
-    resumen: string;
-    video: string[];
-    imagenes: string[];
-    ecuaciones: string;
-    constructor(
-      resumen: string,
-      video: string[],
-      imagenes: string[],
-      ecuaciones: string
-    ) {
-      this.resumen = resumen;
-      this.video = video;
-      this.imagenes = imagenes;
-      this.ecuaciones = ecuaciones;
-    }
-    mostrarContenido() {
-      return (
-        <div className="max-w-300 w-full mx-auto min-h-150 max-h-150 flex flex-wrap border-2 rounded-tl-3xl rounded-br-3xl box-border p-4 m-4 bg-blue-200">
-          <div className="w-1/2 bg-yellow-300 p-4 rounded-tl-3xl rounded-br-3xl">
-            {this.resumen}
-          </div>
-          <div className="w-1/2 flex justify-center items-center">
-            <iframe
-              className="aspect-video w-full"
-              src={this.video[0]}
-              title={this.video[1]}
-              // frameBorder="0"
-              // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              // referrerPolicy="strict-origin-when-cross-origin"
-              // allowFullScreen
-            ></iframe>
-          </div>
-          <div className="w-1/2  flex justify-center items-center flex-wrap">
-            <img
-              src={this.imagenes[0]}
-              alt={this.imagenes[1]}
-              title={this.imagenes[2]}
-            />
-          </div>
-          <div className="w-1/2 bg-yellow-300 p-4 rounded-tl-3xl rounded-br-3xl">
-            {this.ecuaciones}
-          </div>
+import { useState } from "react";
+import data from "./datos.json";
+
+// Clase Contenido
+class Contenido {
+  resumen: string;
+  video: string[];
+  imagenes: string[];
+  ecuaciones: string;
+
+  constructor(
+    resumen: string,
+    video: string[],
+    imagenes: string[],
+    ecuaciones: string
+  ) {
+    this.resumen = resumen;
+    this.video = video;
+    this.imagenes = imagenes;
+    this.ecuaciones = ecuaciones;
+  }
+
+  mostrarContenido() {
+    return (
+      <div className="max-w-300 w-full mx-auto min-h-150   flex flex-wrap border-2 rounded-tl-3xl rounded-br-3xl box-border p-4 m-4 bg-blue-200">
+        {/* Renderiza el HTML del resumen */}
+        <div
+          className="w-1/2 p-4 rounded-tl-3xl rounded-br-3xl"
+          dangerouslySetInnerHTML={{ __html: this.resumen }}
+        ></div>
+        <div className="w-1/2 flex justify-center items-center">
+          <iframe
+            className="aspect-video w-full"
+            src={this.video[0]}
+            title={this.video[1]}
+            allowFullScreen
+          ></iframe>
         </div>
-      );
-    }
+        <div className="w-1/2 flex justify-center items-center flex-wrap">
+          <img
+            src={this.imagenes[0]}
+            alt={this.imagenes[1]}
+            title={this.imagenes[2]}
+          />
+        </div>
+        <div
+          className="w-1/2"
+          dangerouslySetInnerHTML={{ __html: this.ecuaciones }}
+        ></div>
+      </div>
+    );
   }
+}
 
-  const informacion: string[][] = [
-    [
-      "Aqui va el contenido del resumen del video1",
-      "https://www.youtube.com/embed/s9QDGv9H9jQ?list=PLUofhDIg_38oPjHgzSf8UfYtIuE5T1wdm",
-      "TYPESCRIPT - Aprendiendo desde CERO con curso oficial de Microsoft",
-      "public/vite.svg",
-      "alt de la imagen1",
-      "titulo de la imagen1",
-      "Ecuaciones1",
-      "video1",
-    ],
-    [
-      "Aqui va el contenido del resumen del video2",
-      "https://www.youtube.com/embed/rEwEa6NXSb8?list=PLT1BRNHVBeMLBXDXQTFptuChaVMsY-Sdw",
-      "APOKI (아뽀키) - ‘Super Duper Ride’ Official MV",
-      "public/vite.svg",
-      "alt de la imagen2",
-      "titulo de la imagen2",
-      "Ecuaciones2",
-      "video2",
-    ],
-    [
-      "Aqui va el contenido del resumen del video3",
-      "https://www.youtube.com/embed/QrYFF5W-Qak?list=PLT1BRNHVBeMLBXDXQTFptuChaVMsY-Sdw",
-      "APOKI (아뽀키) - ‘Nu Boo (feat. SOMIN of KARD)’ Official MV",
-      "public/vite.svg",
-      "alt de la imagen3",
-      "titulo de la imagen3",
-      "Ecuaciones3",
-      "video3",
-    ],
-    [
-      "Aqui va el contenido del resumen del video4",
-      "https://www.youtube.com/embed/6lRUL3GMnUI?list=PLT1BRNHVBeMLBXDXQTFptuChaVMsY-Sdw",
-      "APOKI 아뽀키 &#39;GET IT OUT&#39; MV",
-      "public/vite.svg",
-      "alt de la imagen4",
-      "titulo de la imagen4",
-      "Ecuaciones4",
-      "video4",
-    ],
-  ];
+// Define el tipo del JSON para evitar errores en TypeScript
+interface DataJSON {
+  temas: {
+    [key: string]: {
+      [key: string]: {
+        resumen: string;
+        Video: {
+          url: string;
+          title: string;
+        };
+        Image: {
+          src: string;
+          title: string;
+          alt: string;
+        };
+        Ecuaciones: string;
+      };
+    };
+  };
 
-  function elContenido(): any {
-    let info: any = [];
-    for (let i: number = 0; i < informacion.length; i++) {
-      const contenido = new Contenido(
-        informacion[i][0],
-        [informacion[i][1], informacion[i][2]],
-        [informacion[i][3], informacion[i][4], informacion[i][5]],
-        informacion[i][6]
-      );
-      info.push(contenido.mostrarContenido());
-    }
-    return info;
-  }
+  practico: {
+    [key: string]: {
+      [key: string]: {
+        resumen: string;
+        Video: {
+          url: string;
+          title: string;
+        };
+        Image: {
+          src: string;
+          title: string;
+          alt: string;
+        };
+        Ecuaciones: string;
+      };
+    };
+  };
+}
 
-  return <>{elContenido()}</>;
+// Tipar los datos JSON importados
+const jsonData: DataJSON = data;
+// Mapeo del JSON a instancias de Contenido
+// const contenidos = Object.keys(jsonData.temas).map((key) => {
+//   const contenidosTemas = Object.keys(jsonData.temas[key]).map((llave) => {
+//     const item = jsonData.temas[key][llave];
+//     return new Contenido(
+//       item.resumen,
+//       [item.Video.url, item.Video.title],
+//       [item.Image.src, item.Image.alt, item.Image.title],
+//       item.Ecuaciones
+//     );
+//   });
+//   return contenidosTemas;
+// });
+
+// Componente principal
+function Bento() {
+  const [tema, setTema] = useState("Generalidades");
+
+  const contenidos = Object.keys(jsonData.temas[tema]).map((llave) => {
+    const item = jsonData.temas[tema][llave];
+    return new Contenido(
+      item.resumen,
+      [item.Video.url, item.Video.title],
+      [item.Image.src, item.Image.alt, item.Image.title],
+      item.Ecuaciones
+    );
+  });
+  const contenidosP = Object.keys(jsonData.practico[tema]).map((llave) => {
+    const item = jsonData.practico[tema][llave];
+    return new Contenido(
+      item.resumen,
+      [item.Video.url, item.Video.title],
+      [item.Image.src, item.Image.alt, item.Image.title],
+      item.Ecuaciones
+    );
+  });
+  return (
+    <>
+      <div className="flex justify-around items-center flex-wrap sticky top-0 bg-red-600/30 backdrop-blur-sm w-full h-10 p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+        <button onClick={() => setTema("Generalidades")}>Generalidades</button>
+        <button onClick={() => setTema("CinematicaDinamica")}>
+          Cinematica y Dinamica
+        </button>
+        <button onClick={() => setTema("TrabajoEnergia")}>
+          Trabajo y Energia
+        </button>
+        <button onClick={() => setTema("CantidadMovimientoLineal")}>
+          Cantidad de Movimiento Lineal
+        </button>
+        <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
+        <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
+        <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+      </div>
+
+      {contenidos.map((contenido, index) => {
+        return <div key={index}>{contenido.mostrarContenido()}</div>;
+      })}
+
+      <div className="flex justify-around items-center flex-wrap sticky top-10 bg-white/30 backdrop-blur-sm w-full h-10 p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+        <button onClick={() => setTema("Generalidades")}>Generalidades</button>
+        <button onClick={() => setTema("CinematicaDinamica")}>
+          Cinematica y Dinamica
+        </button>
+        <button onClick={() => setTema("TrabajoEnergia")}>
+          Trabajo y Energia
+        </button>
+        <button onClick={() => setTema("CantidadMovimientoLineal")}>
+          Cantidad de Movimiento Lineal
+        </button>
+        <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
+        <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
+        <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+      </div>
+
+      {contenidosP.map((contenido, index) => {
+        return <div key={index}>{contenido.mostrarContenido()}</div>;
+      })}
+    </>
+  );
 }
 
 export default Bento;

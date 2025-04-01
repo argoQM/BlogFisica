@@ -1,0 +1,101 @@
+{
+  "sector1": {
+    "caracterObjetivos": "",
+    "comienzo": {
+      "fecha": "",
+      "teorico": {
+        "dias": "",
+        "lugar": ""
+      },
+      "practico": "",
+      "talleres": "",
+      "consultas": {
+        "horario": "",
+        "lugar": ""
+      }
+    }
+  },
+  "sector2": {
+    "horarios": {
+      "src": "",
+      "title": "Horarios",
+      "alt": "Imagen de los horarios"
+    },
+    "talleres": {
+      "informacion": {
+        "obligatoriedad": "",
+        "presencialidad": "",
+        "totalTalleres": "",
+        "GananciaEvaluacion": "",
+        "puntajeMaximo": ""
+      },
+      "grupos": {
+        "grupo1": {
+          "dia": "",
+          "horario": "",
+          "lugar": ""
+        },
+        "grupo2": {
+          "dia": "",
+          "horario": "",
+          "lugar": ""
+        },
+        "grupo3": {
+          "dia": "",
+          "horario": "",
+          "lugar": ""
+        },
+        "grupo4": {
+          "dia": "",
+          "horario": "",
+          "lugar": ""
+        },
+        "grupo5": {
+          "dia": "",
+          "horario": "",
+          "lugar": ""
+        }
+      }
+    },
+    "cronograma": {
+      "src": "",
+      "title": "Cronograma",
+      "alt": "Imagen del cronograma"
+    }
+  },
+  "sector3": {
+    "descargables": {
+      "informacionCurso": {
+        "titulo": "",
+        "programa": {
+          "label": "",
+          "src": ""
+        },
+        "estructura": {
+          "label": "",
+          "src": ""
+        }
+      },
+      "materiales": {
+        "titulo": "",
+        "libro": {
+          "label": "",
+          "src": ""
+        },
+        "formulas": {
+          "label": "",
+          "src": ""
+        }
+      },
+      "simulaciones": {
+        "web1": {
+          "src": ""
+        },
+        "web2": {
+          "src": ""
+        }
+      }
+    },
+    "cartelera": {}
+  }
+}

@@ -1,12 +1,12 @@
-// import Bento from "./Components/Bento";
 import "./App.css";
-import Bento2 from "./Components/Bento2";
+import Bento from "./Components/Bento";
+import Information from "./Components/Information";
 
 function App() {
   return (
     <>
-      {/* <Bento /> */}
-      <Bento2 />
+      <Information />
+      <Bento />
     </>
   );
 }
