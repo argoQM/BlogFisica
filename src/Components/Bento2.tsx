@@ -71,6 +71,24 @@ interface DataJSON {
       };
     };
   };
+
+  practico: {
+    [key: string]: {
+      [key: string]: {
+        resumen: string;
+        Video: {
+          url: string;
+          title: string;
+        };
+        Image: {
+          src: string;
+          title: string;
+          alt: string;
+        };
+        Ecuaciones: string;
+      };
+    };
+  };
 }
 
 // Tipar los datos JSON importados
@@ -91,7 +109,7 @@ const jsonData: DataJSON = data;
 
 // Componente principal
 function Bento2() {
-  const [tema, setTema] = useState("TrabajoEnergia");
+  const [tema, setTema] = useState("Generalidades");
 
   const contenidos = Object.keys(jsonData.temas[tema]).map((llave) => {
     const item = jsonData.temas[tema][llave];
@@ -102,9 +120,18 @@ function Bento2() {
       item.Ecuaciones
     );
   });
+  const contenidosP = Object.keys(jsonData.practico[tema]).map((llave) => {
+    const item = jsonData.practico[tema][llave];
+    return new Contenido(
+      item.resumen,
+      [item.Video.url, item.Video.title],
+      [item.Image.src, item.Image.alt, item.Image.title],
+      item.Ecuaciones
+    );
+  });
   return (
     <>
-      <div className="flex justify-around items-center flex-wrap fixed top-0 bg-white/30 backdrop-blur-sm w-full p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+      <div className="flex justify-around items-center flex-wrap sticky top-0 bg-red-600/30 backdrop-blur-sm w-full h-10 p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
         <button onClick={() => setTema("Generalidades")}>Generalidades</button>
         <button onClick={() => setTema("CinematicaDinamica")}>
           Cinematica y Dinamica
@@ -121,6 +148,26 @@ function Bento2() {
       </div>
 
       {contenidos.map((contenido, index) => {
+        return <div key={index}>{contenido.mostrarContenido()}</div>;
+      })}
+
+      <div className="flex justify-around items-center flex-wrap sticky top-10 bg-white/30 backdrop-blur-sm w-full h-10 p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+        <button onClick={() => setTema("Generalidades")}>Generalidades</button>
+        <button onClick={() => setTema("CinematicaDinamica")}>
+          Cinematica y Dinamica
+        </button>
+        <button onClick={() => setTema("TrabajoEnergia")}>
+          Trabajo y Energia
+        </button>
+        <button onClick={() => setTema("CantidadMovimientoLineal")}>
+          Cantidad de Movimiento Lineal
+        </button>
+        <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
+        <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
+        <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+      </div>
+
+      {contenidosP.map((contenido, index) => {
         return <div key={index}>{contenido.mostrarContenido()}</div>;
       })}
     </>

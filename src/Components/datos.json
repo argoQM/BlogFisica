@@ -377,5 +377,84 @@
       }
     },
     "FluidosCalor": {}
+  },
+  "practico": {
+    "Generalidades": {},
+    "CinematicaDinamica": {
+      "video2": {
+        "resumen": "Producto Escalar <ul><li>El producto escalar opera entre dos vectores y devuelve un número.<li>Mide cuán paralelos son dos vectores.</li><li>Es nulo si los vectores son ortogonales.</li></li></ul><br/>Ejemplo de Producto Escalar<ul><li>Se utilizan vectores para calcular ángulos de enlace en estructuras moleculares.<li>Se calcula el coseno del ángulo usando el producto escalar.</li></li></ul><br/>Producto Vectorial<ul><li>El producto vectorial devuelve un nuevo vector.<li>Es perpendicular al plano definido por los vectores originales.</li><li>Se utiliza la regla de la mano derecha para determinar el sentido.</li><br/>Aplicaciones<ul><li>El producto vectorial se usa en física para calcular fuerzas y campos.</li><li>La magnitud del producto vectorial se relaciona con el área de un paralelogramo.</li></ul><br/>Ejemplo de Producto Vectorial<ul><li>Se puede calcular usando una matriz para simplificar el proceso.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/qZaP0oainsY",
+          "title": "2019 Clase 02 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
+    },
+    "TrabajoEnergia": {
+      "video9": {
+        "resumen": "Pseudofuerzas en sistemas rotacionales<ul><li>Se discutieron dos pseudofuerzas: centrífuga y Coriolis.</li><li>La <strong>centrífuga</strong> depende de la posición respecto al eje de giro.</li><li>La <strong>Coriolis</strong> es más compleja, resultando de un producto vectorial entre velocidad angular y velocidad relativa.</li><li>Se recomendó considerar ambas fuerzas juntas en problemas rotacionales.</li></ul><br/>Ejemplos y aplicaciones<ul><li>Se analizó un sistema en rotación con una canaleta diametral.</li><li>Se introdujo un nuevo ejemplo con canaleta circunferencial.</li><li>Se explicó el efecto de la fuerza de Coriolis en el movimiento de fluidos, como en corrientes oceánicas y huracanes.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/WAAV4bV_QMc",
+          "title": "2019 Clase 09 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
+    },
+    "CantidadMovimientoLineal": {
+      "video13": {
+        "resumen": "Momento Lineal<ul><li>Definición de momento lineal como acumulación de fuerzas en el tiempo.</li><li>Se denomina impulso de una fuerza.</li><li>Conservación del momento lineal en sistemas de partículas.</li><li>Importancia de la cinemática y dinámica del centro de masa.</li><li>Cambios de marcos de referencia: sistemas inerciales y no inerciales.</li></ul><br/>Segunda Ley de Newton<ul><li>La fuerza neta es igual a la derivada del momento lineal.</li><li>La masa puede ser variable en sistemas como cohetes.</li></ul><br/>Impulso<ul><li>El impulso es la integral de la fuerza en el tiempo.</li><li>Relación entre impulso y cambio de momento lineal.</li></ul><br/>Sistema de Partículas<ul><li>El momento lineal total es la suma de los momentos de cada partícula.</li><li>Las fuerzas internas se anulan en la suma total.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/HcoGANS6TI4",
+          "title": "2019 Clase 13 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
+    },
+    "Oscilaciones": {
+      "video18": {
+        "resumen": "Oscilaciones<ul><li>Se retoma el sistema masa-resorte y la representación de la fuerza elástica.</li><li>La segunda ley de Newton determina el movimiento del cuerpo.</li><li>La fuerza restauradora debe describirse correctamente.</li><li>La fuerza elástica se calcula en dos pasos:</li><li>Hallar el módulo: ( F = k &#916;x ).</li><li>Asignar el vector: ( F = -k <em>x</em> x̂ ).</li><li>Ejemplos de situaciones con resortes:</li><li>Situación uno: ( x<sub>1</sub> > 0 ) implica fuerza negativa.</li><li>Situación dos: ( x<sub>2</sub> < 0 ) implica fuerza positiva.</li><li>La frecuencia de oscilación depende de la constante de elasticidad y la masa.</li><li>La energía en el oscilador se compone de energía cinética y potencial.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/bruNwBX2jgI",
+          "title": "2019 Clase 18 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
+    },
+    "Rigidos": {
+      "video23": {
+        "resumen": "Repaso de Oscilaciones<ul><li>Se revisa el método determinante para resolver sistemas de ecuaciones diferenciales acopladas no simétricas.</li><li>El método de suma y resta es útil solo para sistemas simétricos.</li><li>Se identifican frecuencias características y se establece un sistema de ecuaciones.</li><li>Se requiere que el determinante de los coeficientes se anule para obtener soluciones no triviales.</li><li>Se discuten las relaciones de amplitud y cómo se determinan a partir de las condiciones iniciales.</li><li>Se enfatiza la importancia de practicar el método sistemático para resolver problemas de oscilaciones.</li></ul>",
+        "Video": {
+          "url": "https://www.youtube.com/embed/An58-rCv6Jo",
+          "title": "2019 Clase 23 Física 101"
+        },
+        "Image": {
+          "src": "",
+          "title": "",
+          "alt": ""
+        },
+        "Ecuaciones": ""
+      }
+    },
+    "FluidosCalor": {}
   }
 }
