@@ -124,8 +124,15 @@ function Information() {
             ></div>
             <div className="w-1/2 bg-violet-300 p-2">
               <div className="flex justify-around gap-2">
-                <div className="bg-amber-300 w-1/2 p-2">Teoricos</div>
-                <div className="bg-amber-300 w-1/2 p-2">Practicos</div>
+                <a
+                  className="bg-amber-300 w-1/3 p-2"
+                  href="https://nivelacion-fisica101.vercel.app/"
+                  target="blank"
+                >
+                  <div>Nivelacion</div>
+                </a>
+                <div className="bg-amber-300 w-1/3 p-2">Teoricos</div>
+                <div className="bg-amber-300 w-1/3 p-2">Practicos</div>
               </div>
               <div className="bg-amber-300 mt-2 p-2">
                 Informacion de comienzo de clases, y lugares de dictado
