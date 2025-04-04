@@ -2,100 +2,275 @@
   "sector1": {
     "caracterObjetivos": "<strong>Carácter y objetivos</strong><br/> Es un curso de Mecánica Clásica de primer nivel que básicamente estudia: mecánica del punto, mecánica del cuerpo rígido y movimiento oscilatorio, con uno y dos grados de libertad, mecánica de fluidos y transferencia de calor.<br/> El curso está dirigido a estudiantes de todas las carreras buscando destacar la relación de la Física y en especial de la Mecánica con la Química y con aplicaciones en general. Al mismo tiempo se busca mostrar como varios conceptos con origen en Mecánica Clásica, han sido extendidos luego a otras áreas de la Física o a las demás Ciencias.<br/> El Curso busca darle al estudiante un manejo sólido del método científico, junto con un espíritu crítico muy desarrollado. Desde el punto de vista técnico se procura familiarizar al estudiante con los Principios de Conservación de Energía y Cantidad de Movimiento Lineal y Angular. Se busca que el estudiante aprenda a transformar una situación física en un problema matemático a resolver y estudiar luego el carácter de la solución obtenida.",
     "comienzo": {
-      "fecha": "",
+      "fecha": "5/8/24",
       "teorico": {
-        "dias": "",
-        "lugar": ""
+        "dias": "Lunes y Miércoles",
+        "horario": "12:30 a 14:00 hs",
+        "lugar": "Salon de Actos. Edificio Central"
       },
-      "practico": "",
-      "talleres": "",
+      "practico": "Los prácticos expositivos ya están filmados y subidos al canal YouTube de la cátedra, con links de acceso en la plataforma Moodle (EVA) del curso. Se cuenta con todos los prácticos ya filmados.",
+      "talleres": "El comienzo de los talleres es en la semana del 26/8/24,",
       "consultas": {
-        "horario": "",
-        "lugar": ""
+        "horario": "Viernes de 13 a 15 hs.",
+        "lugar": "Laboratoriode Fisica, 4to Piso Ed. Anexo Saenz"
       }
     }
   },
   "sector2": {
     "horarios": {
-      "src": "",
+      "src": "public/Img/hoarios_f101-2024.png",
       "title": "Horarios",
       "alt": "Imagen de los horarios"
     },
     "talleres": {
       "informacion": {
-        "obligatoriedad": "",
-        "presencialidad": "",
-        "totalTalleres": "",
-        "GananciaEvaluacion": "",
-        "puntajeMaximo": ""
+        "obligatoriedad": "Son Instancias NO Obligatorias",
+        "presencialidad": "El formato será presencial y a partir de 2023 tendrán evaluación con puntaje que suma para la ganancia de curso.",
+        "totalTalleres": "Se cuenta con un total de 10 talleres en el semestre.",
+        "GananciaEvaluacion": "Se reailizaran pruebas de conocimiento por un total de 0.5 puntos en cada clase de taller semanal. ",
+        "puntajeMaximo": "Se podran ibtener hasta un maximo de 5 puntos."
       },
       "grupos": {
         "grupo1": {
-          "dia": "",
-          "horario": "",
-          "lugar": ""
+          "dia": "Lunes",
+          "horario": "14:00 a 16:00 hs",
+          "lugar": "Salon 433, 4to Piso Ed. Anexo Saenz"
         },
         "grupo2": {
-          "dia": "",
-          "horario": "",
-          "lugar": ""
+          "dia": "Martes",
+          "horario": "10:00 a 12:00 hs",
+          "lugar": "Salon 433, 4to Piso Ed. Anexo Saenz"
         },
         "grupo3": {
-          "dia": "",
-          "horario": "",
-          "lugar": ""
+          "dia": "Martes",
+          "horario": "18:00 a 20:00 hs",
+          "lugar": "1er Piso Ed. Anexo Saenz"
         },
         "grupo4": {
-          "dia": "",
-          "horario": "",
-          "lugar": ""
+          "dia": "Miercoles",
+          "horario": "15:00 a 17:00 hs",
+          "lugar": "Salon 417, 4to Piso Ed. Anexo Saenz"
         },
         "grupo5": {
-          "dia": "",
-          "horario": "",
-          "lugar": ""
+          "dia": "Viernes",
+          "horario": "14:00 a 16:00 hs",
+          "lugar": "Salon 417, 4to Piso Ed. Anexo Saenz"
         }
       }
     },
     "cronograma": {
-      "src": "",
+      "src": "public/Img/cronograma_f101-2024.png",
       "title": "Cronograma",
       "alt": "Imagen del cronograma"
     }
   },
   "sector3": {
     "descargables": {
-      "informacionCurso": {
-        "titulo": "",
-        "programa": {
-          "label": "",
-          "src": ""
+      "informacionGeneralCurso": {
+        "programaAsignatura": {
+          "nombre": "Programa de la Asignatura Fisica 101",
+          "href": "public/archivosFisica101/Programa_Asignatura_Física101.pdf",
+          "download": "Programa_Asignatura_Física101.pdf"
         },
-        "estructura": {
-          "label": "",
-          "src": ""
+        "programaCurso": {
+          "nombre": "Programa del Curso Fisica 101",
+          "href": "public/archivosFisica101/Programa_Fisica_101.pdf",
+          "download": "Programa_Fisica_101.pdf"
+        },
+        "estructuraCurso": {
+          "nombre": "Estructura del Curso Fisica 101",
+          "href": "public/archivosFisica101/estructura_101_2011.pdf",
+          "download": "estructura_101_2011.pdf"
         }
       },
-      "materiales": {
-        "titulo": "",
-        "libro": {
-          "label": "",
-          "src": ""
+      "linkMaterialInteres": {
+        "resumenFormulas": {
+          "nombre": "Resumen de formulas Fisica 101",
+          "href": "public/archivosFisica101/formulas_Fisica101-2020.pdf",
+          "download": "formulas_Fisica101-2020.pdf"
         },
-        "formulas": {
-          "label": "",
-          "src": ""
+        "libroWeb": {
+          "nombre": "Material web del curso",
+          "href": "https://moodle3.fq.edu.uy/pluginfile.php/2606/mod_resource/content/4/0.html",
+          "alt": "Material web del curso",
+          "title": "Material web del curso"
+        },
+        "webSimulaciones": {
+          "web1": {
+            "nombre": "Web 1 de simulaciones",
+            "href": "http://www.sc.ehu.es/sbweb/fisica3/",
+            "alt": "Web 1 de simulaciones",
+            "title": "Web 1 de simulaciones"
+          },
+          "web2": {
+            "nombre": "Web 2 de simulaciones",
+            "href": "http://www.sc.ehu.es/sbweb/fisica/",
+            "alt": "Web 2 de simulaciones",
+            "title": "Web 2 de simulaciones"
+          }
         }
       },
-      "simulaciones": {
-        "web1": {
-          "src": ""
-        },
-        "web2": {
-          "src": ""
+      "materialAdicional": {
+        "tutorias": {
+          "cinematicaDinamica": {
+            "nombre": "Tutorias de Cinematica y Dinamica",
+            "href": "public/archivosFisica101/Tutorias_Cinematica-Dinamica.pdf",
+            "download": "Tutorias_Cinematica-Dinamica.pdf"
+          },
+          "trabajoEnergia": {
+            "nombre": "Tutorias de Trabajo y Energia",
+            "href": "public/archivosFisica101/Tutorias_Trabajo-Energia.pdf",
+            "download": "Tutorias_Trabajo-Energia.pdf"
+          },
+          "CantidadMovimientoLineal": {
+            "nombre": "Tutorias de Cantidad de Movimiento Lineal",
+            "href": "public/archivosFisica101/Tutorias_Momento-Lineal.pdf",
+            "download": "Tutorias_Momento-Lineal.pdf"
+          },
+          "oscilaciones": {
+            "nombre": "Tutorias de Oscilaciones",
+            "href": "public/archivosFisica101/Tutorias_Oscilaciones.pdf",
+            "download": "Tutorias_Oscilaciones.pdf"
+          },
+          "rigidosMomentoAngular": {
+            "nombre": "Tutorias de Rigidos y Momento Angular",
+            "href": "public/archivosFisica101/Tutorias_Rigidos.pdf",
+            "download": "Tutorias_Rigidos.pdf"
+          }
         }
       }
     },
-    "cartelera": {}
+    "cartelera": {
+      "parciales": {
+        "primerParcial": {
+          "fecha": "5/8/24",
+          "horario": "10:00 a 12:00 hs",
+          "lugar": "1er Piso Ed. Anexo Saenz",
+          "resultado": {
+            "href": "",
+            "nombre": "Resultados Primer Parcial",
+            "title": "Resultados Primer Parcial"
+          },
+          "resolucion": {
+            "href": "",
+            "nombre": "Resolucion Primer Parcial",
+            "title": "Resolucion Primer Parcial"
+          },
+          "muestra": {
+            "fecha": "12/8/24",
+            "horario": "10:00 a 12:00 hs",
+            "lugar": "1er Piso Ed. Anexo Saenz"
+          },
+          "consulta": {
+            "consulta1": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            },
+            "consulta2": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            },
+            "consulta3": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            },
+            "consulta4": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            }
+          }
+        },
+        "segundoParcial": {
+          "fecha": "5/8/24",
+          "horario": "10:00 a 12:00 hs",
+          "lugar": "1er Piso Ed. Anexo Saenz",
+          "resultado": {
+            "href": "",
+            "nombre": "Resultados Segundo Parcial",
+            "title": "Resultados Segundo Parcial"
+          },
+          "resolucion": {
+            "href": "",
+            "nombre": "Resolucion Segundo Parcial",
+            "title": "Resolucion Segundo Parcial"
+          },
+          "muestra": {
+            "fecha": "12/8/24",
+            "horario": "10:00 a 12:00 hs",
+            "lugar": "1er Piso Ed. Anexo Saenz"
+          },
+          "consulta": {
+            "consulta1": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            },
+            "consulta2": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            },
+            "consulta3": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            },
+            "consulta4": {
+              "fecha": "12/8/24",
+              "horario": "10:00 a 12:00 hs",
+              "lugar": "1er Piso Ed. Anexo Saenz"
+            }
+          }
+        }
+      },
+      "examen": {
+        "fecha": "12/8/24",
+        "horario": "10:00 a 12:00 hs",
+        "lugar": "1er Piso Ed. Anexo Saenz",
+        "periodo": "Diciembre 2024",
+        "resultado": {
+          "href": "",
+          "nombre": "Resultados Examen",
+          "title": "Resultados Examen"
+        },
+        "resolucion": {
+          "href": "",
+          "nombre": "Resolucion Examen",
+          "title": "Resolucion Examen"
+        },
+        "muestra": {
+          "fecha": "12/8/24",
+          "horario": "10:00 a 12:00 hs",
+          "lugar": "1er Piso Ed. Anexo Saenz"
+        },
+        "consulta": {
+          "consulta1": {
+            "fecha": "12/8/24",
+            "horario": "10:00 a 12:00 hs",
+            "lugar": "1er Piso Ed. Anexo Saenz"
+          },
+          "consulta2": {
+            "fecha": "12/8/24",
+            "horario": "10:00 a 12:00 hs",
+            "lugar": "1er Piso Ed. Anexo Saenz"
+          },
+          "consulta3": {
+            "fecha": "12/8/24",
+            "horario": "10:00 a 12:00 hs",
+            "lugar": "1er Piso Ed. Anexo Saenz"
+          }
+        }
+      },
+      "curso": {
+        "href": "",
+        "nombre": "Resolucion Examen",
+        "title": "Resolucion Examen"
+      },
+      "avisos": "aqui van los avisos"
+    }
   }
 }
