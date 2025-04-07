@@ -460,7 +460,7 @@ function Information() {
             </div>
           </div>
           <div className="mt-4 bg-green-300 p-2 flex gap-4">
-            <div className="w-1/2 bg-red-300 flex flex-col p-2 gap-2">
+            <div className="w-100 bg-red-300 flex flex-col p-2 gap-2">
               <div className="bg-cyan-100 p-2 ">
                 <span>Informacion general del curso.</span>
                 <ul>
@@ -658,23 +658,517 @@ function Information() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 bg-red-300 p-2  flex gap-2 ">
-              <div className="w-1/2 flex flex-col justify-between">
-                <div className="h-1/3 bg-cyan-100 gap-2 ">Curso</div>
-                <div className="h-2/3 bg-cyan-100 gap-2 mt-2 ">Avisos</div>
+            <div className="w-full bg-red-300 p-2  flex gap-2 ">
+              <div className="w-100 flex flex-col justify-between">
+                <div className="h-50 bg-cyan-100 gap-2 ">
+                  <span>Resultado del Curso Fisica 101</span>
+                  <div>
+                    <a
+                      href={dataInfoJSON.sector3.cartelera.curso.href}
+                      title={dataInfoJSON.sector3.cartelera.curso.title}
+                      target="_blank"
+                    >
+                      {dataInfoJSON.sector3.cartelera.curso.nombre}
+                    </a>
+                  </div>
+                </div>
+                <div className="h-full bg-cyan-100 gap-2 mt-2 ">
+                  <span>{dataInfoJSON.sector3.cartelera.avisos}</span>
+                </div>
               </div>
-              <div className="w-1/2 bg-amber-200 flex flex-col justify-between">
-                <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 ">
-                  <div>1er Parcial</div>
-                  <div>Consulta</div>
+              <div className="w-full bg-amber-200 flex flex-col justify-betwee gap-2">
+                <div className=" flex justify-evenly bg-cyan-100 gap-2 ">
+                  <div className="gap-2 p-2 w-150 bg-pink-700 flex flex-col">
+                    <span>1er Parcial</span>
+                    <div className="flex gap-2 p-2 flex-wrap justify-evenly">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Resolucion: </span>
+                        <span>
+                          <a
+                            href={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .primerParcial.resolucion.href
+                            }
+                            title={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .primerParcial.resolucion.title
+                            }
+                            target="_blank"
+                          >
+                            {
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .primerParcial.resolucion.nombre
+                            }
+                          </a>
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Resultado: </span>
+                        <span>
+                          <a
+                            href={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .primerParcial.resultado.href
+                            }
+                            title={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .primerParcial.resultado.title
+                            }
+                            target="_blank"
+                          >
+                            {
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .primerParcial.resultado.nombre
+                            }
+                          </a>
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Muestra:</span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.muestra.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.muestra.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.muestra.lugar
+                          }
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-pink-700 w-200  p-2">
+                    <span>Consultas</span>
+                    <div className="flex  gap-2 p-2 flex-wrap justify-evenly">
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta1.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta1.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta1.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta2.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta2.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta2.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta3.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta3.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta3.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta4.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta4.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .primerParcial.consulta.consulta4.lugar
+                          }
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 mt-2">
-                  <div>2do Parcial</div>
-                  <div>Consulta</div>
+                <div className=" flex justify-evenly bg-cyan-100 gap-2 ">
+                  <div className="gap-2 p-2 w-150 bg-pink-700 flex flex-col">
+                    <span>2do Parcial</span>
+                    <div className="flex gap-2 p-2 flex-wrap justify-evenly">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Resolucion: </span>
+                        <span>
+                          <a
+                            href={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .segundoParcial.resolucion.href
+                            }
+                            title={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .segundoParcial.resolucion.title
+                            }
+                            target="_blank"
+                          >
+                            {
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .segundoParcial.resolucion.nombre
+                            }
+                          </a>
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Resultado: </span>
+                        <span>
+                          <a
+                            href={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .segundoParcial.resultado.href
+                            }
+                            title={
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .segundoParcial.resultado.title
+                            }
+                            target="_blank"
+                          >
+                            {
+                              dataInfoJSON.sector3.cartelera.parciales
+                                .segundoParcial.resultado.nombre
+                            }
+                          </a>
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Muestra:</span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.muestra.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.muestra.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.muestra.lugar
+                          }
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-pink-700 w-200  p-2">
+                    <span>Consultas</span>
+                    <div className="flex  gap-2 p-2 flex-wrap justify-evenly">
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta1.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta1.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta1.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta2.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta2.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta2.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta3.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta3.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta3.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta4.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta4.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.parciales
+                              .segundoParcial.consulta.consulta4.lugar
+                          }
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 mt-2">
-                  <div>Examen</div>
-                  <div>Consulta</div>
+                <div className=" flex justify-evenly bg-cyan-100 gap-2 ">
+                  <div className="gap-2 p-2 w-150 bg-pink-700 flex flex-col">
+                    <span>
+                      Examen periodo{" "}
+                      {dataInfoJSON.sector3.cartelera.examen.periodo}
+                    </span>
+                    <div className="flex gap-2 p-2 flex-wrap justify-evenly">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>
+                          {dataInfoJSON.sector3.cartelera.examen.fecha}
+                        </span>
+                        <span>
+                          {dataInfoJSON.sector3.cartelera.examen.horario}
+                        </span>
+                        <span>
+                          {dataInfoJSON.sector3.cartelera.examen.lugar}
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Resolucion: </span>
+                        <span>
+                          <a
+                            href={
+                              dataInfoJSON.sector3.cartelera.examen.resolucion
+                                .href
+                            }
+                            title={
+                              dataInfoJSON.sector3.cartelera.examen.resolucion
+                                .title
+                            }
+                            target="_blank"
+                          >
+                            {
+                              dataInfoJSON.sector3.cartelera.examen.resolucion
+                                .nombre
+                            }
+                          </a>
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Resultado: </span>
+                        <span>
+                          <a
+                            href={
+                              dataInfoJSON.sector3.cartelera.examen.resultado
+                                .href
+                            }
+                            title={
+                              dataInfoJSON.sector3.cartelera.examen.resultado
+                                .title
+                            }
+                            target="_blank"
+                          >
+                            {
+                              dataInfoJSON.sector3.cartelera.examen.resultado
+                                .nombre
+                            }
+                          </a>
+                        </span>
+                      </div>
+                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                        <span>Muestra:</span>
+                        <span>
+                          {dataInfoJSON.sector3.cartelera.examen.muestra.fecha}
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.muestra
+                              .horario
+                          }
+                        </span>
+                        <span>
+                          {dataInfoJSON.sector3.cartelera.examen.muestra.lugar}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="bg-pink-700 w-200  p-2">
+                    <span>Consultas</span>
+                    <div className="flex  gap-2 p-2 flex-wrap justify-evenly">
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta1.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta1.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta1.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta2.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta2.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta2.lugar
+                          }
+                        </span>
+                      </div>
+                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta3.fecha
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta3.horario
+                          }
+                        </span>
+                        <span>
+                          {
+                            dataInfoJSON.sector3.cartelera.examen.consulta
+                              .consulta3.lugar
+                          }
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
