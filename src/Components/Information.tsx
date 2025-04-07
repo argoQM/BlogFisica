@@ -141,138 +141,138 @@ interface InfoJSON {
         };
       };
     };
-    "cartelera": {
-      "parciales": {
-        "primerParcial": {
-          "fecha": string;
-          "horario": string;
-          "lugar": string;
-          "resultado": {
-            "href": string;
-            "nombre":string;
-            "title": string;
-          },
-          "resolucion": {
-            "href":string;
-            "nombre": string;
-            "title": string;
-          },
-          "muestra": {
-            "fecha": string;
-            "horario": string;
-            "lugar": string;
-          },
-          "consulta": {
-            "consulta1": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            },
-            "consulta2": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            },
-            "consulta3": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            },
-            "consulta4": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            }
-          }
-        },
-        "segundoParcial": {
-          "fecha": string;
-          "horario": string;
-          "lugar": string;
-          "resultado": {
-            "href": string;
-            "nombre": string;
-            "title": string;
-          },
-          "resolucion": {
-            "href": string;
-            "nombre": string;
-            "title": string;
-          },
-          "muestra": {
-            "fecha": string;
-            "horario": string;
-            "lugar":string;
-          },
-          "consulta": {
-            "consulta1": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            },
-            "consulta2": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            },
-            "consulta3": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            },
-            "consulta4": {
-              "fecha": string;
-              "horario": string;
-              "lugar": string;
-            }
-          }
-        }
-      },
-      "examen": {
-        "fecha": string;
-        "horario": string;
-        "lugar": string;
-        "periodo": string;
-        "resultado": {
-          "href":string;
-          "nombre":string;
-          "title": string;
-        },
-        "resolucion": {
-          "href": string;
-          "nombre": string;
-          "title": string;
-        },
-        "muestra": {
-          "fecha": string;
-          "horario": string;
-          "lugar":string;
-        },
-        "consulta": {
-          "consulta1": {
-            "fecha": string;
-            "horario": string;
-            "lugar": string;
-          },
-          "consulta2": {
-            "fecha": string;
-            "horario":string;
-            "lugar": string;
-          },
-          "consulta3": {
-            "fecha": string;
-            "horario": string;
-            "lugar":string;
-          }
-        }
-      },
-      "curso": {
-        "href": string;
-        "nombre":string;
-        "title":string;
-      },
-      "avisos": string;
-    }
+    cartelera: {
+      parciales: {
+        primerParcial: {
+          fecha: string;
+          horario: string;
+          lugar: string;
+          resultado: {
+            href: string;
+            nombre: string;
+            title: string;
+          };
+          resolucion: {
+            href: string;
+            nombre: string;
+            title: string;
+          };
+          muestra: {
+            fecha: string;
+            horario: string;
+            lugar: string;
+          };
+          consulta: {
+            consulta1: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+            consulta2: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+            consulta3: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+            consulta4: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+          };
+        };
+        segundoParcial: {
+          fecha: string;
+          horario: string;
+          lugar: string;
+          resultado: {
+            href: string;
+            nombre: string;
+            title: string;
+          };
+          resolucion: {
+            href: string;
+            nombre: string;
+            title: string;
+          };
+          muestra: {
+            fecha: string;
+            horario: string;
+            lugar: string;
+          };
+          consulta: {
+            consulta1: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+            consulta2: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+            consulta3: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+            consulta4: {
+              fecha: string;
+              horario: string;
+              lugar: string;
+            };
+          };
+        };
+      };
+      examen: {
+        fecha: string;
+        horario: string;
+        lugar: string;
+        periodo: string;
+        resultado: {
+          href: string;
+          nombre: string;
+          title: string;
+        };
+        resolucion: {
+          href: string;
+          nombre: string;
+          title: string;
+        };
+        muestra: {
+          fecha: string;
+          horario: string;
+          lugar: string;
+        };
+        consulta: {
+          consulta1: {
+            fecha: string;
+            horario: string;
+            lugar: string;
+          };
+          consulta2: {
+            fecha: string;
+            horario: string;
+            lugar: string;
+          };
+          consulta3: {
+            fecha: string;
+            horario: string;
+            lugar: string;
+          };
+        };
+      };
+      curso: {
+        href: string;
+        nombre: string;
+        title: string;
+      };
+      avisos: string;
+    };
   };
 }
 //Variables
@@ -306,15 +306,19 @@ function Information() {
                 >
                   <div>Nivelacion</div>
                 </a>
-                <div className="bg-amber-300 w-1/3 p-2 justify-center flex">Teoricos</div>
-                <div className="bg-amber-300 w-1/3 p-2 justify-center flex">Practicos</div>
-              </div>
-                <div className="bg-green-200 p-2 mt-2 flex justify-center">
-                  El curso comienza la semana del:{" "}
-                  <span className="font-bold ">
-                    {dataInfoJSON.sector1.comienzo.fecha}
-                  </span>
+                <div className="bg-amber-300 w-1/3 p-2 justify-center flex">
+                  Teoricos
                 </div>
+                <div className="bg-amber-300 w-1/3 p-2 justify-center flex">
+                  Practicos
+                </div>
+              </div>
+              <div className="bg-green-200 p-2 mt-2 flex justify-center">
+                El curso comienza la semana del:{" "}
+                <span className="font-bold ">
+                  {dataInfoJSON.sector1.comienzo.fecha}
+                </span>
+              </div>
               <div className="bg-red-300  mt-2 p-2 flex flex-wrap gap-2 justify-evenly">
                 <div className="bg-green-200 p-2 w-50">
                   <div>
@@ -329,11 +333,11 @@ function Information() {
                   </div>
                 </div>
                 <div className="bg-green-200 p-2 w-50">
-                  <span className="font-bold underline">Practico</span>:<br/>
+                  <span className="font-bold underline">Practico</span>:<br />
                   {dataInfoJSON.sector1.comienzo.practico}
                 </div>
                 <div className="bg-green-200 p-2 w-50">
-                  <span className="font-bold underline">Talleres</span>:<br/>
+                  <span className="font-bold underline">Talleres</span>:<br />
                   {dataInfoJSON.sector1.comienzo.talleres}
                 </div>
                 <div className="bg-green-200 p-2 w-50">
@@ -359,102 +363,101 @@ function Information() {
                 />
               </div>
               <div className="w-1/2 bg-red-300 p-2">
-              <img
-              className="h-full"
-                src={dataInfoJSON.sector2.cronograma.src}
-                alt={dataInfoJSON.sector2.cronograma.alt}
-                title={dataInfoJSON.sector2.cronograma.title}
-              />
-            </div>
-              
+                <img
+                  className="h-full"
+                  src={dataInfoJSON.sector2.cronograma.src}
+                  alt={dataInfoJSON.sector2.cronograma.alt}
+                  title={dataInfoJSON.sector2.cronograma.title}
+                />
+              </div>
             </div>
             <div className="bg-amber-300 p-2 mt-2">
-                Talleres
-                <div className="bg-green-200 flex  gap-2 justify-between p-2">
-                  <div className="bg-cyan-300 p-2 gap-2 flex flex-col w-1/2">
-                    <div className="bg-pink-200 p-2">
-                      {dataInfoJSON.sector2.talleres.informacion.obligatoriedad}
-                    </div>
-                    <div className="bg-pink-200 p-2">
-                      {dataInfoJSON.sector2.talleres.informacion.presencialidad}
-                    </div>
-                    <div className="bg-pink-200 p-2">
-                      {dataInfoJSON.sector2.talleres.informacion.totalTalleres}
-                    </div>
-                    <div className="bg-pink-200 p-2">
-                      {
-                        dataInfoJSON.sector2.talleres.informacion
-                          .GananciaEvaluacion
-                      }
-                    </div>
-                    <div className="bg-pink-200 p-2">
-                      {dataInfoJSON.sector2.talleres.informacion.puntajeMaximo}
-                    </div>
+              Talleres
+              <div className="bg-green-200 flex  gap-2 justify-between p-2">
+                <div className="bg-cyan-300 p-2 gap-2 flex flex-col w-1/2">
+                  <div className="bg-pink-200 p-2">
+                    {dataInfoJSON.sector2.talleres.informacion.obligatoriedad}
                   </div>
-                  <div className="bg-cyan-300 p-2 flex  flex-wrap justify-evenly gap-2 w-1/2">
-                    <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
-                      Grupo 1{" "}
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo1.dia}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo1.horario}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo1.lugar}
-                      </span>
-                    </div>
-                    <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
-                      Grupo 2{" "}
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo2.dia}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo2.horario}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo2.lugar}
-                      </span>
-                    </div>
-                    <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
-                      Grupo 3{" "}
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo3.dia}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo3.horario}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo3.lugar}
-                      </span>
-                    </div>
-                    <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
-                      Grupo 4{" "}
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo4.dia}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo4.horario}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo4.lugar}
-                      </span>
-                    </div>
-                    <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
-                      Grupo 5{" "}
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo5.dia}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo5.horario}
-                      </span>
-                      <span>
-                        {dataInfoJSON.sector2.talleres.grupos.grupo5.lugar}
-                      </span>
-                    </div>
+                  <div className="bg-pink-200 p-2">
+                    {dataInfoJSON.sector2.talleres.informacion.presencialidad}
+                  </div>
+                  <div className="bg-pink-200 p-2">
+                    {dataInfoJSON.sector2.talleres.informacion.totalTalleres}
+                  </div>
+                  <div className="bg-pink-200 p-2">
+                    {
+                      dataInfoJSON.sector2.talleres.informacion
+                        .GananciaEvaluacion
+                    }
+                  </div>
+                  <div className="bg-pink-200 p-2">
+                    {dataInfoJSON.sector2.talleres.informacion.puntajeMaximo}
+                  </div>
+                </div>
+                <div className="bg-cyan-300 p-2 flex  flex-wrap justify-evenly gap-2 w-1/2">
+                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                    Grupo 1{" "}
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo1.dia}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo1.horario}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo1.lugar}
+                    </span>
+                  </div>
+                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                    Grupo 2{" "}
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo2.dia}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo2.horario}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo2.lugar}
+                    </span>
+                  </div>
+                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                    Grupo 3{" "}
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo3.dia}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo3.horario}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo3.lugar}
+                    </span>
+                  </div>
+                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                    Grupo 4{" "}
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo4.dia}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo4.horario}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo4.lugar}
+                    </span>
+                  </div>
+                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                    Grupo 5{" "}
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo5.dia}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo5.horario}
+                    </span>
+                    <span>
+                      {dataInfoJSON.sector2.talleres.grupos.grupo5.lugar}
+                    </span>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
           <div className="mt-4 bg-green-300 p-2 flex gap-4">
             <div className="w-1/2 bg-red-300 flex flex-col p-2 gap-2">
@@ -610,7 +613,8 @@ function Information() {
                       </a>
                     </li>
                     <li>
-                      <a  href={
+                      <a
+                        href={
                           dataInfoJSON.sector3.descargables.materialAdicional
                             .tutorias.CantidadMovimientoLineal.href
                         }
@@ -619,10 +623,12 @@ function Information() {
                         {
                           dataInfoJSON.sector3.descargables.materialAdicional
                             .tutorias.CantidadMovimientoLineal.nombre
-                        }></a>
+                        }
+                      </a>
                     </li>
                     <li>
-                      <a  href={
+                      <a
+                        href={
                           dataInfoJSON.sector3.descargables.materialAdicional
                             .tutorias.oscilaciones.href
                         }
@@ -631,10 +637,12 @@ function Information() {
                         {
                           dataInfoJSON.sector3.descargables.materialAdicional
                             .tutorias.oscilaciones.nombre
-                        }</a>
+                        }
+                      </a>
                     </li>
                     <li>
-                      <a  href={
+                      <a
+                        href={
                           dataInfoJSON.sector3.descargables.materialAdicional
                             .tutorias.rigidosMomentoAngular.href
                         }
@@ -643,31 +651,32 @@ function Information() {
                         {
                           dataInfoJSON.sector3.descargables.materialAdicional
                             .tutorias.rigidosMomentoAngular.nombre
-                        }</a>
+                        }
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className="w-1/2 bg-red-300 p-2  flex gap-2 ">
-                        <div className="w-1/2 flex flex-col justify-between">
-                          <div className="h-1/3 bg-cyan-100 gap-2 ">Curso</div>
-                          <div className="h-2/3 bg-cyan-100 gap-2 mt-2 ">Avisos</div>
-                        </div>
-                        <div className="w-1/2 bg-amber-200 flex flex-col justify-between">
-                          <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 " >
-                            <div>1er Parcial</div>
-                            <div>Consulta</div>
-                          </div>
-                          <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 mt-2">
-                            <div>2do Parcial</div>
-                            <div>Consulta</div>
-                          </div>
-                          <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 mt-2">
-                            <div>Examen</div>
-                            <div>Consulta</div>
-                          </div>
-                        </div>
+              <div className="w-1/2 flex flex-col justify-between">
+                <div className="h-1/3 bg-cyan-100 gap-2 ">Curso</div>
+                <div className="h-2/3 bg-cyan-100 gap-2 mt-2 ">Avisos</div>
+              </div>
+              <div className="w-1/2 bg-amber-200 flex flex-col justify-between">
+                <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 ">
+                  <div>1er Parcial</div>
+                  <div>Consulta</div>
+                </div>
+                <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 mt-2">
+                  <div>2do Parcial</div>
+                  <div>Consulta</div>
+                </div>
+                <div className="h-1/3 flex justify-between bg-cyan-100 gap-2 mt-2">
+                  <div>Examen</div>
+                  <div>Consulta</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
