@@ -279,8 +279,8 @@ interface InfoJSON {
 const dataInfoJSON: InfoJSON = datos;
 function Information() {
   return (
-    <>
-      <header className="flex justify-evenly items-center w-full h-15 bg-orange-600 ">
+    <div className="max-w-300 flex mx-auto  flex-col bg-slate-950">
+      <header className="flex justify-evenly items-center w-full h-15 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl text-white">
         <div>DETEMA</div>
         <div>Facultad de Quimica</div>
         <div>UdelaR</div>
@@ -290,37 +290,40 @@ function Information() {
           Fisica 101
         </h1>
         <div className="p-4">
-          <div className="bg-green-300 p-2 flex gap-4">
+          <div className="bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4 flex gap-4 ">
             <div
-              className="w-1/2 bg-red-300 p-2"
+              className="w-1/2  p-2 text-white bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl"
               dangerouslySetInnerHTML={{
                 __html: dataInfoJSON.sector1.caracterObjetivos,
               }}
             ></div>
-            <div className="w-1/2 bg-violet-300 p-2">
-              <div className="flex justify-around gap-2">
+            <div className="w-1/2  p-2 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl">
+              <div className="flex justify-around gap-2 ">
                 <a
-                  className="bg-amber-300 w-1/3 p-2 justify-center flex"
+                  className="bg-amber-200 rounded-3xl hover:bg-amber-300 w-1/3 p-2 justify-center flex"
                   href="https://nivelacion-fisica101.vercel.app/"
                   target="blank"
                 >
                   <div>Nivelacion</div>
                 </a>
-                <div className="bg-amber-300 w-1/3 p-2 justify-center flex">
+                <div className="bg-green-200 rounded-3xl hover:bg-green-300 w-1/3 p-2 justify-center flex">
                   Teoricos
                 </div>
-                <div className="bg-amber-300 w-1/3 p-2 justify-center flex">
+                <div className="bg-blue-200 rounded-3xl hover:bg-blue-300 w-1/3 p-2 justify-center flex">
                   Practicos
                 </div>
               </div>
-              <div className="bg-green-200 p-2 mt-2 flex justify-center">
-                El curso comienza la semana del:{" "}
+              <div className="text-white gap-2 p-2 mt-2 flex justify-center">
+                El curso comienza la semana del:
                 <span className="font-bold ">
                   {dataInfoJSON.sector1.comienzo.fecha}
                 </span>
               </div>
-              <div className="bg-red-300  mt-2 p-2 flex flex-wrap gap-2 justify-evenly">
-                <div className="bg-green-200 p-2 w-50">
+              <div className="bg-[url(public/Img/corcho.jpg)]  bg-center  mt-2 p-2 flex flex-wrap gap-2 justify-evenly rounded-md">
+                <div className="bg-green-200 p-2 size-50 rounded-br-3xl shadow-2xl">
+                  <div className="flex justify-center items-center">
+                    <div className="size-4 bg-red-700 border-1 border-red-800 rounded-full"></div>
+                  </div>
                   <div>
                     <span className="font-bold underline">Teoricos</span>:
                   </div>
@@ -332,15 +335,24 @@ function Information() {
                     Lugar: {dataInfoJSON.sector1.comienzo.teorico.lugar}
                   </div>
                 </div>
-                <div className="bg-green-200 p-2 w-50">
+                <div className="bg-blue-200 p-2 size-55 shadow-2xl rounded-br-3xl">
+                  <div className="flex justify-center items-center">
+                    <div className="size-4 bg-orange-700 border-1 border-orange-800 rounded-full"></div>
+                  </div>
                   <span className="font-bold underline">Practico</span>:<br />
                   {dataInfoJSON.sector1.comienzo.practico}
                 </div>
-                <div className="bg-green-200 p-2 w-50">
+                <div className="bg-orange-200 p-2 size-50 shadow-2xl rounded-br-3xl">
+                  <div className="flex justify-center items-center">
+                    <div className="size-4 bg-blue-700 border-1 border-blue-800 rounded-full"></div>
+                  </div>
                   <span className="font-bold underline">Talleres</span>:<br />
                   {dataInfoJSON.sector1.comienzo.talleres}
                 </div>
-                <div className="bg-green-200 p-2 w-50">
+                <div className="bg-yellow-200 p-2 size-50 shadow-2xl rounded-br-3xl">
+                  <div className="flex justify-center items-center">
+                    <div className="size-4 bg-violet-700 border-1 border-violet-800 rounded-full"></div>
+                  </div>
                   <span className="font-bold underline">Consultas</span>:
                   <div>
                     Dia y horario:{" "}
@@ -353,49 +365,50 @@ function Information() {
               </div>
             </div>
           </div>
-          <div className="mt-4 bg-green-300 p-2  gap-4">
-            <div className=" bg-violet-300 p-2 flex">
-              <div className="bg-amber-300 p-2 w-1/2">
+          <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4  gap-4">
+            <div className="  p-2 flex gap-4">
+              <div className="bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl  p-4 w-1/2">
                 <img
+                  className="rounded-tl-3xl rounded-br-3xl "
                   src={dataInfoJSON.sector2.horarios.src}
                   alt={dataInfoJSON.sector2.horarios.alt}
                   title={dataInfoJSON.sector2.horarios.title}
                 />
               </div>
-              <div className="w-1/2 bg-red-300 p-2">
+              <div className="w-1/2  p-4 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl ">
                 <img
-                  className="h-full"
+                  className="h-full rounded-tl-3xl rounded-br-3xl "
                   src={dataInfoJSON.sector2.cronograma.src}
                   alt={dataInfoJSON.sector2.cronograma.alt}
                   title={dataInfoJSON.sector2.cronograma.title}
                 />
               </div>
             </div>
-            <div className="bg-amber-300 p-2 mt-2">
-              Talleres
-              <div className="bg-green-200 flex  gap-2 justify-between p-2">
-                <div className="bg-cyan-300 p-2 gap-2 flex flex-col w-1/2">
-                  <div className="bg-pink-200 p-2">
+            <div className=" bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl p-2 mt-2">
+              <span className="text-white">Talleres</span>
+              <div className=" flex  gap-2 justify-between p-2">
+                <div className=" p-2 gap-2 flex flex-col w-1/2">
+                  <div className="bg-orange-200 p-2 rounded-tl-3xl">
                     {dataInfoJSON.sector2.talleres.informacion.obligatoriedad}
                   </div>
-                  <div className="bg-pink-200 p-2">
+                  <div className="bg-orange-200 p-2">
                     {dataInfoJSON.sector2.talleres.informacion.presencialidad}
                   </div>
-                  <div className="bg-pink-200 p-2">
+                  <div className="bg-orange-200 p-2">
                     {dataInfoJSON.sector2.talleres.informacion.totalTalleres}
                   </div>
-                  <div className="bg-pink-200 p-2">
+                  <div className="bg-orange-200 p-2">
                     {
                       dataInfoJSON.sector2.talleres.informacion
                         .GananciaEvaluacion
                     }
                   </div>
-                  <div className="bg-pink-200 p-2">
+                  <div className="bg-orange-200 p-2 rounded-br-3xl">
                     {dataInfoJSON.sector2.talleres.informacion.puntajeMaximo}
                   </div>
                 </div>
-                <div className="bg-cyan-300 p-2 flex  flex-wrap justify-evenly gap-2 w-1/2">
-                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                <div className=" p-2 flex  flex-wrap justify-evenly gap-2 w-1/2">
+                  <div className="bg-orange-200 justify-center p-2 w-40 flex flex-col items-center text-center">
                     Grupo 1{" "}
                     <span>
                       {dataInfoJSON.sector2.talleres.grupos.grupo1.dia}
@@ -407,7 +420,7 @@ function Information() {
                       {dataInfoJSON.sector2.talleres.grupos.grupo1.lugar}
                     </span>
                   </div>
-                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                  <div className="bg-orange-200 justify-center p-2 w-40 flex flex-col items-center text-center">
                     Grupo 2{" "}
                     <span>
                       {dataInfoJSON.sector2.talleres.grupos.grupo2.dia}
@@ -419,7 +432,7 @@ function Information() {
                       {dataInfoJSON.sector2.talleres.grupos.grupo2.lugar}
                     </span>
                   </div>
-                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                  <div className="bg-orange-200 justify-center p-2 w-40 flex flex-col items-center text-center">
                     Grupo 3{" "}
                     <span>
                       {dataInfoJSON.sector2.talleres.grupos.grupo3.dia}
@@ -431,7 +444,7 @@ function Information() {
                       {dataInfoJSON.sector2.talleres.grupos.grupo3.lugar}
                     </span>
                   </div>
-                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                  <div className="bg-orange-200 justify-center p-2 w-40 flex flex-col items-center text-center">
                     Grupo 4{" "}
                     <span>
                       {dataInfoJSON.sector2.talleres.grupos.grupo4.dia}
@@ -443,7 +456,7 @@ function Information() {
                       {dataInfoJSON.sector2.talleres.grupos.grupo4.lugar}
                     </span>
                   </div>
-                  <div className="bg-pink-200 justify-center p-2 w-40 flex flex-col items-center text-center">
+                  <div className="bg-orange-200 justify-center p-2 w-40 flex flex-col items-center text-center">
                     Grupo 5{" "}
                     <span>
                       {dataInfoJSON.sector2.talleres.grupos.grupo5.dia}
@@ -459,9 +472,9 @@ function Information() {
               </div>
             </div>
           </div>
-          <div className="mt-4 bg-green-300 p-2 flex gap-4">
-            <div className="w-100 bg-red-300 flex flex-col p-2 gap-2">
-              <div className="bg-cyan-100 p-2 ">
+          <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4 flex gap-4 ">
+            <div className="w-100 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl h-125 flex flex-col p-2 gap-2">
+              <div className="text-white p-2 ">
                 <span>Informacion general del curso.</span>
                 <ul>
                   <li>
@@ -517,7 +530,7 @@ function Information() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-cyan-100 p-2 ">
+              <div className="text-white p-2 ">
                 <span>Link y Material de interes.</span>
                 <div>
                   <a
@@ -579,7 +592,7 @@ function Information() {
                   </ul>
                 </div>
               </div>
-              <div className="bg-cyan-100 p-2 ">
+              <div className="text-white p-2 ">
                 <span>Material adicional</span>
                 <div>
                   <span>Repartidos de trabajo adicionales</span>
@@ -658,9 +671,9 @@ function Information() {
                 </div>
               </div>
             </div>
-            <div className="w-full bg-red-300 p-2  flex gap-2 ">
-              <div className="w-100 flex flex-col justify-between">
-                <div className="h-50 bg-cyan-100 gap-2 ">
+            <div className=" bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl rounded-md p-4  flex gap-2 ">
+              <div className="min-w-50 flex flex-col gap-8">
+                <div className="h-50 bg-white gap-2 p-2 rounded-tl-3xl rounded-br-3xl">
                   <span>Resultado del Curso Fisica 101</span>
                   <div>
                     <a
@@ -672,16 +685,27 @@ function Information() {
                     </a>
                   </div>
                 </div>
-                <div className="h-full bg-cyan-100 gap-2 mt-2 ">
-                  <span>{dataInfoJSON.sector3.cartelera.avisos}</span>
+                <div className=" bg-white gap-2 mt-2 flex flex-col p-2 rounded-tl-3xl rounded-br-3xl">
+                  <span className="text-center">
+                    {dataInfoJSON.sector3.cartelera.avisos}
+                  </span>
+                  <div className="bg-pink-200 rounded-3xl p-2 flex justify-center items-center">
+                    1er Parcial
+                  </div>
+                  <div className="bg-purple-200 rounded-3xl p-2 flex justify-center items-center">
+                    2do Parcial
+                  </div>
+                  <div className="bg-violet-200 rounded-3xl p-2 flex justify-center items-center">
+                    Examen
+                  </div>
                 </div>
               </div>
-              <div className="w-full bg-amber-200 flex flex-col justify-betwee gap-2">
-                <div className=" flex justify-evenly bg-cyan-100 gap-2 ">
-                  <div className="gap-2 p-2 w-150 bg-pink-700 flex flex-col">
+              <div className="  flex flex-wrap justify-evenly gap-2 ">
+                <div className=" flex justify-evenly flex-col max-w-150  bg-[url(public/Img/corcho.jpg)]  bg-center rounded-md gap-2  ">
+                  <div className="gap-2 p-2   flex flex-col">
                     <span>1er Parcial</span>
                     <div className="flex gap-2 p-2 flex-wrap justify-evenly">
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-200 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -701,7 +725,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-200 w-50">
                         <span>Resolucion: </span>
                         <span>
                           <a
@@ -722,7 +746,7 @@ function Information() {
                           </a>
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-200 w-50">
                         <span>Resultado: </span>
                         <span>
                           <a
@@ -743,7 +767,7 @@ function Information() {
                           </a>
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-pink-200 w-50">
                         <span>Muestra:</span>
                         <span>
                           {
@@ -766,10 +790,10 @@ function Information() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-pink-700 w-200  p-2">
+                  <div className="   p-2">
                     <span>Consultas</span>
                     <div className="flex  gap-2 p-2 flex-wrap justify-evenly">
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -789,7 +813,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -809,7 +833,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -829,7 +853,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -852,11 +876,11 @@ function Information() {
                     </div>
                   </div>
                 </div>
-                <div className=" flex justify-evenly bg-cyan-100 gap-2 ">
-                  <div className="gap-2 p-2 w-150 bg-pink-700 flex flex-col">
+                <div className=" flex justify-evenly flex-col max-w-150  bg-[url(public/Img/corcho.jpg)]  bg-center rounded-md gap-2 hidden ">
+                  <div className="gap-2 p-2   flex flex-col">
                     <span>2do Parcial</span>
                     <div className="flex gap-2 p-2 flex-wrap justify-evenly">
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-purple-200 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -876,7 +900,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-purple-200 w-50">
                         <span>Resolucion: </span>
                         <span>
                           <a
@@ -897,7 +921,7 @@ function Information() {
                           </a>
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-purple-200 w-50">
                         <span>Resultado: </span>
                         <span>
                           <a
@@ -918,7 +942,7 @@ function Information() {
                           </a>
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-purple-200 w-50">
                         <span>Muestra:</span>
                         <span>
                           {
@@ -941,10 +965,10 @@ function Information() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-pink-700 w-200  p-2">
+                  <div className="   p-2">
                     <span>Consultas</span>
                     <div className="flex  gap-2 p-2 flex-wrap justify-evenly">
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -964,7 +988,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -984,7 +1008,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -1004,7 +1028,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.parciales
@@ -1027,14 +1051,14 @@ function Information() {
                     </div>
                   </div>
                 </div>
-                <div className=" flex justify-evenly bg-cyan-100 gap-2 ">
-                  <div className="gap-2 p-2 w-150 bg-pink-700 flex flex-col">
+                <div className=" flex justify-evenly flex-col max-w-150  bg-[url(public/Img/corcho.jpg)]  bg-center rounded-md gap-2 hidden ">
+                  <div className="gap-2 p-2   flex flex-col">
                     <span>
-                      Examen periodo{" "}
+                      Examen periodo
                       {dataInfoJSON.sector3.cartelera.examen.periodo}
                     </span>
                     <div className="flex gap-2 p-2 flex-wrap justify-evenly">
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-violet-200 w-50">
                         <span>
                           {dataInfoJSON.sector3.cartelera.examen.fecha}
                         </span>
@@ -1045,7 +1069,7 @@ function Information() {
                           {dataInfoJSON.sector3.cartelera.examen.lugar}
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-violet-200 w-50">
                         <span>Resolucion: </span>
                         <span>
                           <a
@@ -1066,7 +1090,7 @@ function Information() {
                           </a>
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-violet-200 w-50">
                         <span>Resultado: </span>
                         <span>
                           <a
@@ -1087,7 +1111,7 @@ function Information() {
                           </a>
                         </span>
                       </div>
-                      <div className="flex flex-col gap-2 p-2 bg-pink-400 w-50">
+                      <div className="flex flex-col gap-2 p-2 bg-violet-200 w-50">
                         <span>Muestra:</span>
                         <span>
                           {dataInfoJSON.sector3.cartelera.examen.muestra.fecha}
@@ -1104,10 +1128,10 @@ function Information() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-pink-700 w-200  p-2">
+                  <div className="  p-2">
                     <span>Consultas</span>
                     <div className="flex  gap-2 p-2 flex-wrap justify-evenly">
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.examen.consulta
@@ -1127,7 +1151,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.examen.consulta
@@ -1147,7 +1171,7 @@ function Information() {
                           }
                         </span>
                       </div>
-                      <div className="bg-amber-100 flex flex-col gap-2 p-2 w-50">
+                      <div className="bg-yellow-200 flex flex-col gap-2 p-2 w-50">
                         <span>
                           {
                             dataInfoJSON.sector3.cartelera.examen.consulta
@@ -1175,7 +1199,7 @@ function Information() {
           </div>
         </div>
       </main>
-    </>
+    </div>
   );
 }
 

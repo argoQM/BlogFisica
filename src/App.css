@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .bg-corcho {
+    background-image: url("public/Img/corcho.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+body {
+  background-color: #020618;
+}
