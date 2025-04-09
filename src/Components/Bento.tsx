@@ -22,7 +22,7 @@ class Contenido {
 
   mostrarContenido() {
     return (
-      <div className="max-w-300 w-full mx-auto min-h-150   flex flex-wrap border-2 rounded-tl-3xl rounded-br-3xl box-border p-4 m-4 bg-blue-200">
+      <div className="max-w-300  mx-auto min-h-150   flex flex-wrap border-2 rounded-tl-3xl rounded-br-3xl box-border p-4 my-4  text-white bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90%">
         {/* Renderiza el HTML del resumen */}
         <div
           className="w-1/2 p-4 rounded-tl-3xl rounded-br-3xl"
@@ -131,7 +131,10 @@ function Bento() {
   });
   return (
     <>
-      <div className="flex justify-around items-center flex-wrap sticky top-0 bg-red-600/30 backdrop-blur-sm w-full h-10 p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+      <div
+        id="contenidoTeorico"
+        className="flex justify-around items-center flex-wrap sticky top-0 bg-green-200/30 backdrop-blur-sm max-w-300 mx-auto text-white h-15 p-4 rounded-br-3xl rounded-tl-3xl backdrop-blur-smbackdrop-blur-xs"
+      >
         <button onClick={() => setTema("Generalidades")}>Generalidades</button>
         <button onClick={() => setTema("CinematicaDinamica")}>
           Cinematica y Dinamica
@@ -145,13 +148,22 @@ function Bento() {
         <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
         <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
         <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+        <a
+          href="#arriba"
+          className="size-8 rounded-full bg-white flex justify-center text-black hover:animate-pulse items-center font-extrabold"
+        >
+          &#8593;
+        </a>
       </div>
 
       {contenidos.map((contenido, index) => {
         return <div key={index}>{contenido.mostrarContenido()}</div>;
       })}
 
-      <div className="flex justify-around items-center flex-wrap sticky top-10 bg-white/30 backdrop-blur-sm w-full h-10 p-4 rounded-b-3xl backdrop-blur-smbackdrop-blur-xs">
+      <div
+        id="contenidoPractico"
+        className="flex justify-around items-center flex-wrap sticky top-10 bg-blue-200/30 text-white backdrop-blur-sm max-w-300 mx-auto h-15 p-4 rounded-br-3xl rounded-tl-3xl backdrop-blur-smbackdrop-blur-xs "
+      >
         <button onClick={() => setTema("Generalidades")}>Generalidades</button>
         <button onClick={() => setTema("CinematicaDinamica")}>
           Cinematica y Dinamica
@@ -165,6 +177,12 @@ function Bento() {
         <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
         <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
         <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+        <a
+          href="#arriba"
+          className="size-8 rounded-full bg-white flex justify-center text-black items-center duration-2000 ease-in-out hover:animate-pulse font-extrabold "
+        >
+          &#8593;
+        </a>
       </div>
 
       {contenidosP.map((contenido, index) => {

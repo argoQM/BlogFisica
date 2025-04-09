@@ -1,4 +1,6 @@
+import Header from "./Header";
 import datos from "./informacionCursoFisica101.json";
+import Seccion1 from "./Seccion1";
 interface InfoJSON {
   sector1: {
     caracterObjetivos: string;
@@ -278,93 +280,38 @@ interface InfoJSON {
 //Variables
 const dataInfoJSON: InfoJSON = datos;
 function Information() {
+  const objetivos: string = dataInfoJSON.sector1.caracterObjetivos;
+  const comienzo: string = dataInfoJSON.sector1.comienzo.fecha;
+  const teoricoDias: string = dataInfoJSON.sector1.comienzo.teorico.dias;
+  const teoricoHorario: string = dataInfoJSON.sector1.comienzo.teorico.horario;
+  const teoricoLugar: string = dataInfoJSON.sector1.comienzo.teorico.lugar;
+  const practico: string = dataInfoJSON.sector1.comienzo.practico;
+  const talleres: string = dataInfoJSON.sector1.comienzo.talleres;
+  const consultasHorario: string =
+    dataInfoJSON.sector1.comienzo.consultas.horario;
+  const consultasLugar: string = dataInfoJSON.sector1.comienzo.consultas.lugar;
   return (
-    <div className="max-w-300 flex mx-auto  flex-col bg-slate-950">
-      <header className="flex justify-evenly items-center w-full h-15 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl text-white">
-        <div>DETEMA</div>
-        <div>Facultad de Quimica</div>
-        <div>UdelaR</div>
-      </header>
+    <div id="arriba" className="max-w-300 flex mx-auto  flex-col bg-slate-950">
+      <Header />
       <main>
-        <h1 className="text-3xl text-boltd flex justify-center items-center underline">
-          Fisica 101
-        </h1>
+        <header>
+          <h1 className="text-5xl font-bold my-4 flex justify-center items-center  text-white">
+            Fisica 101
+          </h1>
+        </header>
         <div className="p-4">
-          <div className="bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4 flex gap-4 ">
-            <div
-              className="w-1/2  p-2 text-white bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl"
-              dangerouslySetInnerHTML={{
-                __html: dataInfoJSON.sector1.caracterObjetivos,
-              }}
-            ></div>
-            <div className="w-1/2  p-2 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl">
-              <div className="flex justify-around gap-2 ">
-                <a
-                  className="bg-amber-200 rounded-3xl hover:bg-amber-300 w-1/3 p-2 justify-center flex"
-                  href="https://nivelacion-fisica101.vercel.app/"
-                  target="blank"
-                >
-                  <div>Nivelacion</div>
-                </a>
-                <div className="bg-green-200 rounded-3xl hover:bg-green-300 w-1/3 p-2 justify-center flex">
-                  Teoricos
-                </div>
-                <div className="bg-blue-200 rounded-3xl hover:bg-blue-300 w-1/3 p-2 justify-center flex">
-                  Practicos
-                </div>
-              </div>
-              <div className="text-white gap-2 p-2 mt-2 flex justify-center">
-                El curso comienza la semana del:
-                <span className="font-bold ">
-                  {dataInfoJSON.sector1.comienzo.fecha}
-                </span>
-              </div>
-              <div className="bg-[url(public/Img/corcho.jpg)]  bg-center  mt-2 p-2 flex flex-wrap gap-2 justify-evenly rounded-md">
-                <div className="bg-green-200 p-2 size-50 rounded-br-3xl shadow-2xl">
-                  <div className="flex justify-center items-center">
-                    <div className="size-4 bg-red-700 border-1 border-red-800 rounded-full"></div>
-                  </div>
-                  <div>
-                    <span className="font-bold underline">Teoricos</span>:
-                  </div>
-                  <div>Dias: {dataInfoJSON.sector1.comienzo.teorico.dias}</div>
-                  <div>
-                    Horarios: {dataInfoJSON.sector1.comienzo.teorico.horario}
-                  </div>
-                  <div>
-                    Lugar: {dataInfoJSON.sector1.comienzo.teorico.lugar}
-                  </div>
-                </div>
-                <div className="bg-blue-200 p-2 size-55 shadow-2xl rounded-br-3xl">
-                  <div className="flex justify-center items-center">
-                    <div className="size-4 bg-orange-700 border-1 border-orange-800 rounded-full"></div>
-                  </div>
-                  <span className="font-bold underline">Practico</span>:<br />
-                  {dataInfoJSON.sector1.comienzo.practico}
-                </div>
-                <div className="bg-orange-200 p-2 size-50 shadow-2xl rounded-br-3xl">
-                  <div className="flex justify-center items-center">
-                    <div className="size-4 bg-blue-700 border-1 border-blue-800 rounded-full"></div>
-                  </div>
-                  <span className="font-bold underline">Talleres</span>:<br />
-                  {dataInfoJSON.sector1.comienzo.talleres}
-                </div>
-                <div className="bg-yellow-200 p-2 size-50 shadow-2xl rounded-br-3xl">
-                  <div className="flex justify-center items-center">
-                    <div className="size-4 bg-violet-700 border-1 border-violet-800 rounded-full"></div>
-                  </div>
-                  <span className="font-bold underline">Consultas</span>:
-                  <div>
-                    Dia y horario:{" "}
-                    {dataInfoJSON.sector1.comienzo.consultas.horario}
-                  </div>
-                  <div>
-                    Lugar: {dataInfoJSON.sector1.comienzo.consultas.lugar}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Seccion1
+            objetivos={objetivos}
+            comienzo={comienzo}
+            teoricoDias={teoricoDias}
+            teoricoHorario={teoricoHorario}
+            teoricoLugar={teoricoLugar}
+            practico={practico}
+            talleres={talleres}
+            consultasHorario={consultasHorario}
+            consultasLugar={consultasLugar}
+          />
+
           <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4  gap-4">
             <div className="  p-2 flex gap-4">
               <div className="bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl  p-4 w-1/2">
