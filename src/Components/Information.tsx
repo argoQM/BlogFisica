@@ -1,3 +1,4 @@
+import Bento from "./Bento";
 import Header from "./Header";
 import datos from "./informacionCursoFisica101.json";
 import Seccion1 from "./Seccion1";
@@ -280,6 +281,7 @@ interface InfoJSON {
 //Variables
 const dataInfoJSON: InfoJSON = datos;
 function Information() {
+  //Seccion 1
   const objetivos: string = dataInfoJSON.sector1.caracterObjetivos;
   const comienzo: string = dataInfoJSON.sector1.comienzo.fecha;
   const teoricoDias: string = dataInfoJSON.sector1.comienzo.teorico.dias;
@@ -290,6 +292,8 @@ function Information() {
   const consultasHorario: string =
     dataInfoJSON.sector1.comienzo.consultas.horario;
   const consultasLugar: string = dataInfoJSON.sector1.comienzo.consultas.lugar;
+  //Seccion 2
+  //Seccion 3
   return (
     <div id="arriba" className="max-w-300 flex mx-auto  flex-col bg-slate-950">
       <Header />
@@ -311,7 +315,7 @@ function Information() {
             consultasHorario={consultasHorario}
             consultasLugar={consultasLugar}
           />
-
+          //Seccion2
           <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4  gap-4">
             <div className="  p-2 flex gap-4">
               <div className="bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl  p-4 w-1/2">
@@ -419,6 +423,7 @@ function Information() {
               </div>
             </div>
           </div>
+          //Seccion 3
           <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4 flex gap-4 ">
             <div className="w-100 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl h-125 flex flex-col p-2 gap-2">
               <div className="text-white p-2 ">
@@ -1144,6 +1149,7 @@ function Information() {
               </div>
             </div>
           </div>
+          <Bento />
         </div>
       </main>
     </div>

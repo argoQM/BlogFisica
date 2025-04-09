@@ -24,7 +24,7 @@ const Seccion1: React.FC<Props> = ({
   return (
     <div className="bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4 flex gap-4 ">
       <div
-        className="w-1/2  p-2 text-white bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl"
+        className="w-1/2  p-4 text-white bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl"
         dangerouslySetInnerHTML={{
           __html: objetivos,
         }}
