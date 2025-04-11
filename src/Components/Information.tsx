@@ -316,26 +316,27 @@ function Information() {
             consultasLugar={consultasLugar}
           />
           //Seccion2
-          <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4  gap-4">
+          <div className="mt-4 p-4  gap-4">
+            {/* bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl  */}
             <div className="  p-2 flex gap-4">
-              <div className="bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl  p-4 w-1/2">
+              <div className="bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl   p-4 w-1/2">
                 <img
-                  className="rounded-tl-3xl rounded-br-3xl "
+                  className="rounded-tl-3xl  "
                   src={dataInfoJSON.sector2.horarios.src}
                   alt={dataInfoJSON.sector2.horarios.alt}
                   title={dataInfoJSON.sector2.horarios.title}
                 />
               </div>
-              <div className="w-1/2  p-4 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl ">
+              <div className="w-1/2  p-4 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% ">
                 <img
-                  className="h-full rounded-tl-3xl rounded-br-3xl "
+                  className="h-full "
                   src={dataInfoJSON.sector2.cronograma.src}
                   alt={dataInfoJSON.sector2.cronograma.alt}
                   title={dataInfoJSON.sector2.cronograma.title}
                 />
               </div>
             </div>
-            <div className=" bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl p-2 mt-2">
+            <div className=" bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90%  rounded-br-3xl p-2 mt-2">
               <span className="text-white">Talleres</span>
               <div className=" flex  gap-2 justify-between p-2">
                 <div className=" p-2 gap-2 flex flex-col w-1/2">
@@ -424,206 +425,9 @@ function Information() {
             </div>
           </div>
           //Seccion 3
-          <div className="mt-4 bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl p-4 flex gap-4 ">
-            <div className="w-100 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl h-125 flex flex-col p-2 gap-2">
-              <div className="text-white p-2 ">
-                <span>Informacion general del curso.</span>
-                <ul>
-                  <li>
-                    <a
-                      href={
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.programaAsignatura.href
-                      }
-                      download={
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.programaAsignatura.download
-                      }
-                    >
-                      {
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.programaAsignatura.nombre
-                      }
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.programaCurso.href
-                      }
-                      download={
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.programaCurso.download
-                      }
-                    >
-                      {
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.programaCurso.nombre
-                      }
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.estructuraCurso.href
-                      }
-                      download={
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.estructuraCurso.download
-                      }
-                    >
-                      {
-                        dataInfoJSON.sector3.descargables
-                          .informacionGeneralCurso.estructuraCurso.nombre
-                      }
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="text-white p-2 ">
-                <span>Link y Material de interes.</span>
-                <div>
-                  <a
-                    href={
-                      dataInfoJSON.sector3.descargables.linkMaterialInteres
-                        .resumenFormulas.href
-                    }
-                    // download={
-                    //   dataInfoJSON.sector3.descargables.linkMaterialInteres
-                    //     .resumenFormulas.download
-                    // }
-                    target="_blank"
-                  >
-                    {
-                      dataInfoJSON.sector3.descargables.linkMaterialInteres
-                        .resumenFormulas.nombre
-                    }
-                  </a>
-                </div>
-                <div className="flex flex-col ">
-                  <span>Webs de simulaciones:</span>
-                  <ul>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.linkMaterialInteres
-                            .webSimulaciones.web1.href
-                        }
-                        title={
-                          dataInfoJSON.sector3.descargables.linkMaterialInteres
-                            .webSimulaciones.web1.title
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.linkMaterialInteres
-                            .webSimulaciones.web1.nombre
-                        }
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.linkMaterialInteres
-                            .webSimulaciones.web2.href
-                        }
-                        title={
-                          dataInfoJSON.sector3.descargables.linkMaterialInteres
-                            .webSimulaciones.web2.title
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.linkMaterialInteres
-                            .webSimulaciones.web2.nombre
-                        }
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="text-white p-2 ">
-                <span>Material adicional</span>
-                <div>
-                  <span>Repartidos de trabajo adicionales</span>
-                  <ul>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.cinematicaDinamica.href
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.cinematicaDinamica.nombre
-                        }
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.trabajoEnergia.href
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.trabajoEnergia.nombre
-                        }
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.CantidadMovimientoLineal.href
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.CantidadMovimientoLineal.nombre
-                        }
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.oscilaciones.href
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.oscilaciones.nombre
-                        }
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href={
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.rigidosMomentoAngular.href
-                        }
-                        target="_blank"
-                      >
-                        {
-                          dataInfoJSON.sector3.descargables.materialAdicional
-                            .tutorias.rigidosMomentoAngular.nombre
-                        }
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className=" bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl rounded-md p-4  flex gap-2 ">
+          <div className="mt-4  p-4 flex gap-4  flex-col">
+            {/* bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl */}
+            <div className=" bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl  rounded-md p-4  flex gap-2 ">
               <div className="min-w-50 flex flex-col gap-8">
                 <div className="h-50 bg-white gap-2 p-2 rounded-tl-3xl rounded-br-3xl">
                   <span>Resultado del Curso Fisica 101</span>
@@ -653,7 +457,7 @@ function Information() {
                 </div>
               </div>
               <div className="  flex flex-wrap justify-evenly gap-2 ">
-                <div className=" flex justify-evenly flex-col max-w-150  bg-[url(public/Img/corcho.jpg)]  bg-center rounded-md gap-2  ">
+                <div className=" flex justify-evenly flex-col   bg-[url(public/Img/corcho.jpg)]  bg-center rounded-md gap-2  ">
                   <div className="gap-2 p-2   flex flex-col">
                     <span>1er Parcial</span>
                     <div className="flex gap-2 p-2 flex-wrap justify-evenly">
@@ -1145,6 +949,429 @@ function Information() {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="  flex flex-col p-2 gap-4">
+              {/* bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl rounded-br-3xl */}
+              <div className="text-white p-4 text-center  bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% ">
+                <span>Informacion general del curso.</span>
+                <ul className="flex flex-wrap justify-evenly gap-2 mt-2">
+                  <li>
+                    <a
+                      className="group flex flex-col gap-2"
+                      href={
+                        dataInfoJSON.sector3.descargables
+                          .informacionGeneralCurso.programaAsignatura.href
+                      }
+                      // download={
+                      //   dataInfoJSON.sector3.descargables
+                      //     .informacionGeneralCurso.programaAsignatura.download
+                      // }
+                      target="_blank"
+                    >
+                      <span className="  p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                        {
+                          dataInfoJSON.sector3.descargables
+                            .informacionGeneralCurso.programaAsignatura.nombre
+                        }
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          className=" mx-2 group-hover:animate-bounce"
+                        >
+                          <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                        </svg>
+                      </span>
+                      <iframe
+                        // className="hidden group-hover:flex "
+                        src={
+                          dataInfoJSON.sector3.descargables
+                            .informacionGeneralCurso.programaAsignatura.href
+                        }
+                      ></iframe>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="group flex flex-col gap-2"
+                      href={
+                        dataInfoJSON.sector3.descargables
+                          .informacionGeneralCurso.programaCurso.href
+                      }
+                      // download={
+                      //   dataInfoJSON.sector3.descargables
+                      //     .informacionGeneralCurso.programaCurso.download
+                      // }
+                      target="_blank"
+                    >
+                      <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                        {
+                          dataInfoJSON.sector3.descargables
+                            .informacionGeneralCurso.programaCurso.nombre
+                        }
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          className=" mx-2 group-hover:animate-bounce"
+                        >
+                          <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                        </svg>
+                      </span>
+                      <iframe
+                        // className="hidden group-hover:flex "
+                        src={
+                          dataInfoJSON.sector3.descargables
+                            .informacionGeneralCurso.programaCurso.href
+                        }
+                      ></iframe>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="group flex flex-col gap-2"
+                      href={
+                        dataInfoJSON.sector3.descargables
+                          .informacionGeneralCurso.estructuraCurso.href
+                      }
+                      // download={
+                      //   dataInfoJSON.sector3.descargables
+                      //     .informacionGeneralCurso.estructuraCurso.download
+                      // }
+                      target="_blank"
+                    >
+                      <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                        {
+                          dataInfoJSON.sector3.descargables
+                            .informacionGeneralCurso.estructuraCurso.nombre
+                        }
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          className=" mx-2 group-hover:animate-bounce"
+                        >
+                          <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                        </svg>
+                      </span>
+
+                      <iframe
+                        // className="hidden group-hover:flex "
+                        src={
+                          dataInfoJSON.sector3.descargables
+                            .informacionGeneralCurso.estructuraCurso.href
+                        }
+                      ></iframe>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="text-white p-2 ">
+                <div className="flex flex-wrap gap-4 justify-between">
+                  <div className="p-4  bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% text-center">
+                    <span>Material de interes.</span>
+                    <div className="mt-2">
+                      <a
+                        className="group flex flex-col gap-2"
+                        href={
+                          dataInfoJSON.sector3.descargables.linkMaterialInteres
+                            .resumenFormulas.href
+                        }
+                        // download={
+                        //   dataInfoJSON.sector3.descargables.linkMaterialInteres
+                        //     .resumenFormulas.download
+                        // }
+                        target="_blank"
+                      >
+                        <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                          {
+                            dataInfoJSON.sector3.descargables
+                              .linkMaterialInteres.resumenFormulas.nombre
+                          }
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className=" mx-2 group-hover:animate-bounce"
+                          >
+                            <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                          </svg>
+                        </span>
+                        <iframe
+                          // className="hidden group-hover:flex "
+                          src={
+                            dataInfoJSON.sector3.descargables
+                              .linkMaterialInteres.resumenFormulas.href
+                          }
+                        ></iframe>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="p-4 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90%  text-center">
+                    <span>Webs de simulaciones:</span>
+                    <div className="flex mt-2">
+                      <ul className="flex justify-evenly gap-6">
+                        <li>
+                          <a
+                            className="group flex flex-col gap-2"
+                            href={
+                              dataInfoJSON.sector3.descargables
+                                .linkMaterialInteres.webSimulaciones.web1.href
+                            }
+                            title={
+                              dataInfoJSON.sector3.descargables
+                                .linkMaterialInteres.webSimulaciones.web1.title
+                            }
+                            target="_blank"
+                          >
+                            <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                              {
+                                dataInfoJSON.sector3.descargables
+                                  .linkMaterialInteres.webSimulaciones.web1
+                                  .nombre
+                              }
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="currentColor"
+                                className=" mx-2 group-hover:animate-bounce"
+                              >
+                                <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                              </svg>
+                            </span>
+                            <iframe
+                              src={
+                                dataInfoJSON.sector3.descargables
+                                  .linkMaterialInteres.webSimulaciones.web1.href
+                              }
+                            ></iframe>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            className="group flex flex-col gap-2"
+                            href={
+                              dataInfoJSON.sector3.descargables
+                                .linkMaterialInteres.webSimulaciones.web2.href
+                            }
+                            title={
+                              dataInfoJSON.sector3.descargables
+                                .linkMaterialInteres.webSimulaciones.web2.title
+                            }
+                            target="_blank"
+                          >
+                            <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                              {
+                                dataInfoJSON.sector3.descargables
+                                  .linkMaterialInteres.webSimulaciones.web2
+                                  .nombre
+                              }
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="currentColor"
+                                className=" mx-2 group-hover:animate-bounce"
+                              >
+                                <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                              </svg>
+                            </span>
+                            <iframe
+                              src={
+                                dataInfoJSON.sector3.descargables
+                                  .linkMaterialInteres.webSimulaciones.web2.href
+                              }
+                            ></iframe>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-white p-2 ">
+                <div className="p-4 rounded-br-3xl bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% text-center">
+                  <span>Repartidos de trabajo adicionales</span>
+                  <ul className="flex flex-wrap gap-4 justify-evenly mt-2">
+                    <li>
+                      <a
+                        className="group flex flex-col gap-2"
+                        href={
+                          dataInfoJSON.sector3.descargables.materialAdicional
+                            .tutorias.cinematicaDinamica.href
+                        }
+                        target="_blank"
+                      >
+                        <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                          {
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.cinematicaDinamica.nombre
+                          }
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className=" mx-2 group-hover:animate-bounce"
+                          >
+                            <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                          </svg>
+                        </span>
+                        <iframe
+                          src={
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.cinematicaDinamica.href
+                          }
+                        ></iframe>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="group flex flex-col gap-2"
+                        href={
+                          dataInfoJSON.sector3.descargables.materialAdicional
+                            .tutorias.trabajoEnergia.href
+                        }
+                        target="_blank"
+                      >
+                        <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                          {
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.trabajoEnergia.nombre
+                          }
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className=" mx-2 group-hover:animate-bounce"
+                          >
+                            <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                          </svg>
+                        </span>
+                        <iframe
+                          src={
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.trabajoEnergia.href
+                          }
+                        ></iframe>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="group flex flex-col gap-2"
+                        href={
+                          dataInfoJSON.sector3.descargables.materialAdicional
+                            .tutorias.CantidadMovimientoLineal.href
+                        }
+                        target="_blank"
+                      >
+                        <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                          {
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.CantidadMovimientoLineal.nombre
+                          }
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className=" mx-2 group-hover:animate-bounce"
+                          >
+                            <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                          </svg>
+                        </span>
+                        <iframe
+                          src={
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.CantidadMovimientoLineal.href
+                          }
+                        ></iframe>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="group flex flex-col gap-2"
+                        href={
+                          dataInfoJSON.sector3.descargables.materialAdicional
+                            .tutorias.oscilaciones.href
+                        }
+                        target="_blank"
+                      >
+                        <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                          {
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.oscilaciones.nombre
+                          }
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className=" mx-2 group-hover:animate-bounce"
+                          >
+                            <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                          </svg>
+                        </span>
+                        <iframe
+                          src={
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.oscilaciones.href
+                          }
+                        ></iframe>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className="group flex flex-col gap-2"
+                        href={
+                          dataInfoJSON.sector3.descargables.materialAdicional
+                            .tutorias.rigidosMomentoAngular.href
+                        }
+                        target="_blank"
+                      >
+                        <span className="p-2 rounded-3xl flex justify-center items-center bg-amber-100 hover:bg-amber-200 text-black">
+                          {
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.rigidosMomentoAngular.nombre
+                          }
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className=" mx-2 group-hover:animate-bounce"
+                          >
+                            <path d="M10.5 1h4.5v4h-1V2.7l-5.5 5.5-.7-.7L13.3 2H11V1zM15 15H1V1h8v1H2v12h12V8h1v7z" />
+                          </svg>
+                        </span>
+                        <iframe
+                          src={
+                            dataInfoJSON.sector3.descargables.materialAdicional
+                              .tutorias.rigidosMomentoAngular.href
+                          }
+                        ></iframe>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
