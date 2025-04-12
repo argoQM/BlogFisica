@@ -1,11 +1,13 @@
 import "./App.css";
-import Information from "./Components/Information";
+import Header from "./Components/Header";
+import Main from "./Components/Main";
 
 function App() {
   return (
-    <>
-      <Information />
-    </>
+    <div id="arriba" className="max-w-300 flex mx-auto  flex-col bg-slate-950">
+      <Header />
+      <Main />
+    </div>
   );
 }
 

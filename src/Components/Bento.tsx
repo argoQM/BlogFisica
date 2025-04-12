@@ -131,6 +131,7 @@ function Bento() {
   });
   return (
     <>
+      <div id="contenidoTeoricoTop"></div>
       <div
         id="contenidoTeorico"
         className="flex justify-around items-center flex-wrap sticky top-0 bg-green-200/30 backdrop-blur-sm max-w-300 mx-auto text-white h-15 p-4 rounded-br-3xl rounded-tl-3xl backdrop-blur-smbackdrop-blur-xs"
@@ -148,6 +149,12 @@ function Bento() {
         <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
         <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
         <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+        <a
+          href="#contenidoPractico"
+          className="size-8 rounded-full bg-blue-200 flex justify-center text-black hover:animate-pulse items-center font-extrabold"
+        >
+          &#8595;
+        </a>
         <a
           href="#arriba"
           className="size-8 rounded-full bg-white flex justify-center text-black hover:animate-pulse items-center font-extrabold"
@@ -177,6 +184,12 @@ function Bento() {
         <button onClick={() => setTema("Oscilaciones")}>Oscilaciones</button>
         <button onClick={() => setTema("Rigidos")}>Dinamica de Rigidos</button>
         <button onClick={() => setTema("FluidosCalor")}>Fluidos y Calor</button>
+        <a
+          href="#contenidoTeoricoTop"
+          className="size-8 rounded-full bg-green-200 flex justify-center text-black hover:animate-pulse items-center font-extrabold"
+        >
+          &#8593;
+        </a>
         <a
           href="#arriba"
           className="size-8 rounded-full bg-white flex justify-center text-black items-center duration-2000 ease-in-out hover:animate-pulse font-extrabold "

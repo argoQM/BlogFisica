@@ -1,13 +1,38 @@
-import info from "./Info";
-function Seccion1() {
+interface Props {
+  objetivos: string;
+  comienzo: string;
+  teoricoDias: string;
+  teoricoHorario: string;
+  teoricoLugar: string;
+  practico: string;
+  talleres: string;
+  consultasHorario: string;
+  consultasLugar: string;
+}
+
+const Seccion1: React.FC<Props> = ({
+  objetivos,
+  comienzo,
+  teoricoDias,
+  teoricoHorario,
+  teoricoLugar,
+  practico,
+  talleres,
+  consultasHorario,
+  consultasLugar,
+}) => {
   return (
-    <div className="p-4 flex gap-4 ">
+    <div
+      className="p-4 flex gap-4 "
+      // bg-radial from-slate-900 from-40% to-gray-800  rounded-tl-3xl rounded-br-3xl
+    >
       <div
         className="w-1/2  p-4 text-white bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90% rounded-tl-3xl  "
         dangerouslySetInnerHTML={{
-          __html: info.sector1.caracterObjetivos,
+          __html: objetivos,
         }}
       ></div>
+
       <div className="w-1/2  p-2 bg-radial-[at_50%_75%] from-gray-800 via-slate-900 to-gray-700 to-90%  rounded-br-3xl">
         <div className="flex justify-around gap-2 ">
           <a
@@ -38,7 +63,7 @@ function Seccion1() {
         </div>
         <div className="text-white gap-2 p-2 mt-2 flex justify-center">
           El curso comienza la semana del:
-          <span className="font-bold ">{info.sector1.comienzo.fecha}</span>
+          <span className="font-bold ">{comienzo}</span>
         </div>
         <div className="bg-[url(public/Img/corcho.jpg)]  bg-center  mt-2 p-2 flex flex-wrap gap-2 justify-evenly rounded-md rounded-br-3xl">
           <div className="bg-green-200 p-2 size-50 rounded-br-3xl shadow-2xl">
@@ -48,36 +73,36 @@ function Seccion1() {
             <div>
               <span className="font-bold underline">Teoricos</span>:
             </div>
-            <div>Dias: {info.sector1.comienzo.teorico.dias}</div>
-            <div>Horarios: {info.sector1.comienzo.teorico.horario}</div>
-            <div>Lugar: {info.sector1.comienzo.teorico.lugar}</div>
+            <div>Dias: {teoricoDias}</div>
+            <div>Horarios: {teoricoHorario}</div>
+            <div>Lugar: {teoricoLugar}</div>
           </div>
           <div className="bg-blue-200 p-2 size-55 shadow-2xl rounded-br-3xl">
             <div className="flex justify-center items-center">
-              <div className="size-4 bg-red-700 border-1 border-red-800 rounded-full"></div>
+              <div className="size-4 bg-orange-700 border-1 border-orange-800 rounded-full"></div>
             </div>
             <span className="font-bold underline">Practico</span>:<br />
-            {info.sector1.comienzo.practico}
+            {practico}
           </div>
           <div className="bg-orange-200 p-2 size-50 shadow-2xl rounded-br-3xl">
             <div className="flex justify-center items-center">
-              <div className="size-4 bg-red-700 border-1 border-red-800 rounded-full"></div>
+              <div className="size-4 bg-blue-700 border-1 border-blue-800 rounded-full"></div>
             </div>
             <span className="font-bold underline">Talleres</span>:<br />
-            {info.sector1.comienzo.talleres}
+            {talleres}
           </div>
           <div className="bg-yellow-200 p-2 size-50 shadow-2xl rounded-br-3xl">
             <div className="flex justify-center items-center">
-              <div className="size-4 bg-red-700 border-1 border-red-800 rounded-full"></div>
+              <div className="size-4 bg-violet-700 border-1 border-violet-800 rounded-full"></div>
             </div>
             <span className="font-bold underline">Consultas</span>:
-            <div>Dia y horario: {info.sector1.comienzo.consultas.horario}</div>
-            <div>Lugar: {info.sector1.comienzo.consultas.lugar}</div>
+            <div>Dia y horario: {consultasHorario}</div>
+            <div>Lugar: {consultasLugar}</div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Seccion1;
