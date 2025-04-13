@@ -31,7 +31,7 @@ function Seccion1() {
           </a>
           <a
             href="#cartelera"
-            className="bg-orange-200 rounded-3xl hover:bg-orange-300 w-1/3 p-2 justify-center flex"
+            className="bg-gray-200 rounded-3xl hover:bg-gray-300 w-1/3 p-2 justify-center flex"
           >
             Cartelera
           </a>
