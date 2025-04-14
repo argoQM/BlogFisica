@@ -15,25 +15,25 @@ function Seccion1() {
             href="https://nivelacion-fisica101.vercel.app/"
             target="blank"
           >
-            <div>Nivelacion</div>
+            <button>Nivelacion</button>
           </a>
           <a
             href="#contenidoTeorico"
             className="bg-green-200 rounded-3xl hover:bg-green-300 w-1/3 p-2 justify-center flex"
           >
-            Teoricos
+            <button>Teoricos</button>
           </a>
           <a
             href="#contenidoPractico"
             className="bg-blue-200 rounded-3xl hover:bg-blue-300 w-1/3 p-2 justify-center flex"
           >
-            Practicos
+            <button>Practicos</button>
           </a>
           <a
             href="#cartelera"
             className="bg-gray-200 rounded-3xl hover:bg-gray-300 w-1/3 p-2 justify-center flex"
           >
-            Cartelera
+            <button>Cartelera</button>
           </a>
         </div>
         <div className="text-white gap-2 p-2 mt-2 flex justify-center">
